@@ -1,0 +1,283 @@
+@font-face {
+  font-family: TwitterChirpExtendedHeavy;
+  src: url(/fonts/chirp-extended-heavy-web.woff2) format('woff2');
+  src: url(/fonts/chirp-extended-heavy-web.woff) format('woff');
+  font-weight: 700;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+
+@font-face {
+  font-family: TwitterChirp;
+  src: url(/fonts/chirp-regular-web.woff2) format('woff2');
+  src: url(/fonts/chirp-regular-web.woff) format('woff');
+  font-weight: 400;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+
+@font-face {
+  font-family: TwitterChirp;
+  src: url(/fonts/chirp-medium-web.woff2) format('woff2');
+  src: url(/fonts/chirp-medium-web.woff) format('woff');
+  font-weight: 500;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+
+@font-face {
+  font-family: TwitterChirp;
+  src: url(/fonts/chirp-bold-web.woff2) format('woff2');
+  src: url(/fonts/chirp-bold-web.woff) format('woff');
+  font-weight: 700;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+
+@font-face {
+  font-family: TwitterChirp;
+  src: url(/fonts/chirp-heavy-web.woff2) format('woff2');
+  src: url(/fonts/chirp-heavy-web.woff) format('woff');
+  font-weight: 800;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+
+
+.words {
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  background-image: none;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 20px;  
+}
+ .words {
+  background: linear-gradient(124deg,
+      #dd00f3 1%,
+      #ff2400,
+      #e81d1d,
+      #e8b71d,
+      #e3e81d,
+      #1de840,
+      #1ddde8,
+      #2b1de8,
+      #dd00f3,
+      #dd00f3,
+
+      #ff2400,
+      #e81d1d,
+      #e8b71d,
+      #e3e81d,
+      #1de840,
+      #1ddde8,
+      #2b1de8,
+      #dd00f3,
+      #dd00f3);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+  color: #000;
+  animation: glowing 20s linear infinite;
+  background-size: 200%;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: 50px;
+  text-align: center;  
+  top: 0px;
+}
+
+.HelpCenterTweetbook:hover .words {
+  opacity: 1;
+}
+
+
+
+.HelpCenterTweetbook:hover:before {
+  opacity: 1;
+}
+
+.HelpCenterTweetbook:hover.btn:after {
+  opacity: 1;
+}
+
+
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 400% 0;
+  }
+}
+
+@keyframes glowing-reverse {
+  0% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+.wordsWelcome {
+  position: relative;
+  top: 160px;
+  color: white;
+  left: 40px;
+  font-size: 1.9em;
+  font-weight: bold;
+  text-align: center;
+  background-image: none;
+  z-index: 1000; /* Ensure it is in front of other elements */
+}
+@media (max-width: 768px) {
+  .wordsWelcome {
+    position: relative;
+    top: 110px;
+    left: 78px;
+    }
+}
+.wordsWelcome2 {
+  position: relative;
+  top: 100px;
+  margin-left: 40px;
+  z-index: 1000; /* Ensure it is in front of other elements */
+  color: white;
+  font-weight: initial;
+  font-size: 15px;
+}
+.wordsWelcome3{
+  position: relative;
+  top: -350px;
+  margin-left: 40px;
+  z-index: 1000; /* Ensure it is in front of other elements */
+  color: rgb(255, 255, 255);
+  font-weight: initial;
+  font-size: 25px;
+}
+.helpCenterimg {
+  width: 100%;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .helpCenterimg {
+    position: relative;
+    top: -70px;
+    left: 0px;
+    width: 100%;
+    }
+}
+.help-center-container {
+  padding-top: 50px; /* Ensure content does not go behind the header */
+}
+
+.Tweetbookbook {
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white; /* White background */
+  z-index: 1000; /* Ensure it's on top of other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+
+
+.wordsWelcome {
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.wordsWelcome2 {
+  margin-top: 60px; /* Adjust margin to ensure it's visible below the header */
+}
+
+.helpCenterimg {
+  width: 100%;
+  height: auto; /* Adjust height to maintain aspect ratio */
+}
+.Analytics-button {
+  border: 1px solid #000;
+  border-radius: 0px;
+  width: 150px;
+  height: 40px;
+  margin-left: 50px;
+  position: relative; /* Make sure the dropdown is positioned relative to this button */
+  border: 1px solid #ddd; /* Border around the dropdown */
+  background-color: #fff; /* White background */
+  box-shadow: none; /* Shadow for better visibility */
+  width: 150px; /* Match the width of the button */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: block; /* Ensure it displays as a block element */
+}
+/* Option item hover effect */
+.Analytics-button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Dropdown options container */
+.options-dropdown {
+  position: absolute; /* Position relative to the button */
+  top: 80%; /* Position below the button */
+  left: 1039px; /* Align with the left edge of the button */
+  border: 1px solid #ddd; /* Border around the dropdown */
+  border-radius: 0px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: none; /* Shadow for better visibility */
+  width: 150px; /* Match the width of the button */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: block; /* Ensure it displays as a block element */
+  border-top: none;
+}
+
+/* Dropdown option item */
+.option-item {
+  padding: 10px; /* Spacing inside each item */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  border-bottom: 1px solid #ddd; /* Border between options */
+}
+
+/* Remove border for the last item */
+.option-item:last-child {
+  border-bottom: none;
+}
+
+/* Option item hover effect */
+.option-item:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Option item active effect */
+.option-item:active {
+  background-color: #ddd; /* Slightly darker gray background on click */
+}
+
+/* Close button inside the comparison content */
+.close-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #000; /* Black color */
+  font-size: 20px; /* Font size for the close icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: absolute; /* Position inside the comparison content */
+  top: 10px; /* Position from the top */
+  right: 10px; /* Position from the right */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Close button hover effect */
+.close-button:hover {
+  color: #ff0000; /* Red color on hover */
+}
+
+/* Close button active effect */
+.close-button:active {
+  color: #cc0000; /* Darker red color on click */
+}
+

@@ -1,0 +1,8480 @@
+@use 'fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --main-background: var(--dark-background);
+    --main-search-background: var(--dark-search-background);
+    --main-sidebar-background: var(--dark-sidebar-background);
+    --main-accent: var(--accent-blue);
+
+    --dark-background: 0 0 0;
+    --dim-background: 22 33 44;
+    --light-background: 255 255 255;
+
+    --dark-search-background: 32 35 39;
+    --dim-search-background: 39 51 64;
+    --light-search-background: 239 243 244;
+
+    --dark-sidebar-background: 22 24 28;
+    --dim-sidebar-background: 30 39 50;
+    --light-sidebar-background: 247 249 249;
+
+    --accent-yellow: 255 213 0;
+    --accent-blue: 29 155 240; // Can replace or you want even in blue black purple and gold
+    --accent-pink: 249 26 130;
+    --accent-purple: 120 87 255;
+    --accent-orange: 255 122 0;
+    --accent-green: 0 184 122;
+  }
+/* Apply to the entire app */
+:root {
+  overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+  .rhfhderhfdhdrfh {
+    @media (max-width: 768px) { // Adjust the max-width to target different phone sizes
+      border: none; // Remove border on phones
+    }
+  }
+  .tweet-statsBtn2 {
+    background: none;
+    // background: rgb(246, 246, 246);
+    border-radius: 0px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    } 
+  .HeroIcon135 {
+    @media (max-width: 768px) { // Adjust the max-width to target different phone sizes
+      position: relative;
+      top: 400px;    }
+  
+    @media (max-width: 480px) { // For smaller phones
+    position: relative;
+    top: 400px;    }
+  }
+  .object-cover {
+    border-radius: 10px;
+  }
+  .accent-tabcover5img {
+    width: 120%;
+    position: relative;
+    top: 5px;
+    border-radius: 20px;
+    left: 0px;
+    @media (max-width: 768px) { // Adjust the max-width to target different phone sizes
+      position: relative;
+      left: 0px;
+      width: 100%;    }
+  
+    @media (max-width: 480px) { // For smaller phones
+      position: relative;
+      left: 0px; 
+      width: 100%;   }
+  }
+  .fixed-square {
+    position: fixed; /* Fixes the position relative to the viewport */
+    right: 20px; /* Positions it 20 pixels from the right edge */
+    top: 60px; /* Positions it 20 pixels from the top edge */
+    width: 400px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    padding: 10px; /* Optional: Padding inside the square */
+    z-index: 1000; /* Ensures it appears above other content */
+  }  
+  /* Hide on smaller screens (phones) */
+@media (max-width: 768px) {
+  .fixed-square {
+    display: none;
+  }
+}
+  .aside-sidebar {
+    width: 100%;
+  }
+ .FlagIconfdsghsh {
+  background: #9fcfff;
+  border-radius: 100px;
+ }
+ .dssdawsdawsd {
+  position: relative;
+  top: 0px;
+ }
+  .arrow-btn {
+    padding: 8px 20px;
+    background-color: #f1f1f1;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  .button-row {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px; /* Space between buttons */
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    margin-bottom: 1rem; /* Space below button row */
+  }
+  .Divffwfsfw {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+  .posts-section {
+    width: 100%;
+    padding: 0 1rem; /* Optional: Add some padding if needed */
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .arrow-btn {
+    width: 30px;
+    text-align: center;
+  }
+  
+  .content-box {
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+  }
+  
+// /* Global Profile Image Styles */
+// .global-profile-img {
+//   position: relative; /* Positions the element relative to its normal position */
+//   margin-top: 0.125rem; /* mt-0.5 in Tailwind is 0.125rem */
+//   height: 9rem; /* h-36 in Tailwind is 9rem */
+//   width: 13.2rem; /* 130% of the height to maintain aspect ratio */
+//   left: 0px; /* Ensure it starts at the left edge of its containing block */
+//   overflow: hidden; /* Ensures content outside the boundary is hidden */
+//   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+// }
+.menu-container23 {
+  z-index:1000;
+  border: 1px solid rgb(216, 216, 216);
+}
+.joinButton-plus {
+  background: #1964fc;
+  color: white;
+  width: 200px;
+  height: 35px;
+  border-radius: 105px;
+  position: relative;
+  top: 190px;
+  margin-left: 30%;
+  display: flex;             /* Use flexbox */
+  align-items: center;       /* Vertically center text */
+  justify-content: center;   /* Horizontally center text */
+  text-align: center;        /* Center text horizontally */
+  font-size: 15px;           /* Optional: adjust font size */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Font similar to Twitter's */
+}
+.premiumBtn2 {
+  background: rgb(250, 250, 250);
+  box-shadow: 0px 3px 14px 3px rgb(227, 227, 227);
+  border-radius: 0px 0px 10px 10px;
+
+}
+// .list-none {
+//   box-shadow: 0px 3px 14px 3px rgb(227, 227, 227);
+//   background: rgb(250, 250, 250);
+//   border-radius: 10px 10px 0px 0px;
+// }
+
+.GetverifiedBtn {
+  
+}
+.list-noneText {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  height: 40px;
+}
+.Tweetbookbluespan {
+  color: #0077ff;
+  cursor: pointer;
+}
+.Regulations12 {
+  position: relative;
+  top: 10px;
+  border-radius: 105px;
+  display: flex;             /* Use flexbox */
+  align-items: center;       /* Vertically center text */
+  justify-content: center;   /* Horizontally center text */
+  text-align: center;        /* Center text horizontally */
+  font-size: 15px;           /* Optional: adjust font size */
+  color: #657786; /* Gray color similar to Twitter's text color */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Font similar to Twitter's */
+  font-size: 18px; /* Adjust as needed */
+  font-weight: 400; /* Regular weight, adjust if needed */
+}
+.scrollable-container {
+  margin-top: 20px;
+}
+.Tweetbookbluespan2 {
+  color: #657786; /* Gray color similar to Twitter's text color */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Font similar to Twitter's */
+  font-size: 12px; /* Adjust as needed */
+  font-weight: 400; /* Regular weight, adjust if needed */
+}
+.Tweetbookbluespan23 {
+  color: #6493ba; /* Gray color similar to Twitter's text color */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Font similar to Twitter's */
+  font-size: 11px; /* Adjust as needed */
+  font-weight: 400; /* Regular weight, adjust if needed */
+  margin-top: 10px;
+}
+.Tweetbookbluespan2following {
+  color: #657786; /* Gray color similar to Twitter's text color */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Font similar to Twitter's */
+  font-size: 15px; /* Adjust as needed */
+  font-weight: 400; /* Regular weight, adjust if needed */
+  margin-top: 10px;
+}
+.joinButton-plus-Cancel {
+  background: #f0f0f0;
+  color: rgb(111, 111, 111);
+  width: 200px;
+  height: 35px;
+  border-radius: 105px;
+  margin-top: 200px;
+  margin-left: 30%;
+  display: flex;             /* Use flexbox */
+  align-items: center;       /* Vertically center text */
+  justify-content: center;   /* Horizontally center text */
+  text-align: center;        /* Center text horizontally */
+  font-size: 15px;           /* Optional: adjust font size */
+}
+.joinButton-plus-Cancel2 {
+  background: #f0f0f0;
+  color: rgb(111, 111, 111);
+  width: 35px;
+  height: 35px;
+  border-radius: 105px;
+  display: flex;             /* Use flexbox */
+  align-items: center;       /* Vertically center text */
+  justify-content: center;   /* Horizontally center text */
+  text-align: center;        /* Center text horizontally */
+  font-size: 15px;           /* Optional: adjust font size */
+}
+.menu-container234 {
+  background: none;
+  z-index:1000;
+  border: 1px solid rgb(233, 233, 233);
+  box-shadow: 0 4px 16px 5px rgb(233, 233, 233);
+  border-radius: 10px;
+  margin-left: 70px;
+}
+.scrollable-container {
+  height: 500px;
+}
+// /* Styles for extra-small screens and up (e.g., phones) */
+// @media (max-width: 479px) { /* Adjust for phones and very small screens */
+//   .global-profile-img {
+//     height: 8rem; /* Adjust height for smaller screens if needed */
+//     width: auto; /* Ensure width is auto to maintain aspect ratio */
+//   }
+// }
+
+// /* Styles for small screens and up (e.g., tablets) */
+// @media (min-width: 480px) and (max-width: 639px) { /* Tailwind's xs breakpoint is typically 480px */
+//   .global-profile-img {
+//     height: 10rem; /* h-48 in Tailwind is 10rem for slightly larger screens */
+//     width: auto; /* Ensure width is auto to maintain aspect ratio */
+//   }
+// }
+
+// /* Styles for larger screens (e.g., tablets and up) */
+// @media (min-width: 640px) { /* Tailwind's sm breakpoint is typically 640px */
+//   .global-profile-img {
+//     height: 13rem; /* h-52 in Tailwind is 13rem for larger screens */
+//     width: auto; /* Ensure width is auto to maintain aspect ratio */
+//   }
+// }
+
+
+// /* Disabled state */
+// .global-profile-img2:disabled {
+//   cursor: auto; /* disabled:cursor-auto */
+//   opacity: 1; /* disabled:opacity-100 */
+// }
+
+// /* Responsive styles */
+// @media (min-width: 480px) { /* Tailwind's xs breakpoint is typically 480px */
+//   .global-profile-img2 {
+//     width: 8rem; /* w-32 in Tailwind is 8rem */
+//     height: 8rem; /* Ensure height matches width */
+//     margin-left: -12rem; /* Adjust for larger screen sizes */
+//   }
+// }
+
+// @media (min-width: 640px) { /* Tailwind's sm breakpoint is typically 640px */
+//   .global-profile-img2 {
+//     width: 9rem; /* w-36 in Tailwind is 9rem */
+//     height: 9rem; /* Ensure height matches width */
+//     margin-left: -15rem; /* Adjust for even larger screen sizes */
+//   }
+// }
+
+/* CSS for menu-container */
+.menu-container {
+  position: absolute;
+  width: 15rem; /* w-60 in Tailwind CSS */
+}
+
+@media (min-width: 1280px) { /* xl breakpoint in Tailwind CSS */
+  .menu-container {
+    width: 100%;
+  }
+}
+.menu-container4Top {
+  position: relative;
+  top:270px;
+  border-radius: 0px 0px 10px 10px;
+}
+.menu-container4Top3 {
+  position: relative;
+  top:110px;
+  border-radius: 0px 0px 10px 10px;
+}
+//  .menu-container4 {
+//   border-radius: 0px 0px 10px 10px;
+//   border: none;
+//   box-shadow: 0px 0px 14px 0px rgb(171, 171, 171);
+//   height: auto;
+//   width: 240px;
+//   position: relative;
+//   top: -10px;
+//  } 
+ .borderbox44 {
+  border-radius: 0px 0px 10px 10px;
+  border: none;
+  box-shadow: 0px 0px 14px 0px rgb(171, 171, 171);
+  height: auto;
+  width: 240px;
+  position: relative;
+  top: 0px;
+  margin-left: -200px;
+}
+.borderbox444 {
+  border-radius: 0px 0px 10px 10px;
+  border: none;
+  box-shadow: 0px 0px 14px 0px rgb(171, 171, 171);
+  height: auto;
+  width: 540px;
+  position: relative;
+  top: 0px;
+  right:20px;
+  height: 300px;
+  margin-left: 5px;
+}
+.notificationmessage {
+  border: 1px solid rgb(246, 246, 246);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 12px;
+  height: 60px;
+  margin-top: 0px;
+  background-color: transparent; /* Start with a transparent background */
+  transition: background-color 0.4s ease; /* Transition the background color over 1 second */
+  cursor: pointer;
+}
+.notificationsMuted {
+  font-size: 12px;
+  width: 100px;
+  color: #5d5d5d;
+}
+.notificationsMuted2 {
+  font-size: 12px;
+  width: 100px;
+  position: relative;
+  left: -29px;
+  color: #5d5d5d;
+}
+.alertButton {
+  background: #f6f6f6;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 10px;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scaling */
+}
+.notificationSettingsBoxSettingsUScssfasfwfas {
+  padding: 30px;
+  border-radius: 20px;
+}
+.notificationSettingsBoxSettingsUScss {
+  border: 1px solid rgb(241, 241, 241);
+  padding: 30px;
+  border-radius: 20px;
+}
+.notificationSettingsBoxSettingsUScss2 {
+  padding: 30px;
+  border-radius: 20px;
+}
+.BoxQualityfilter22 {
+  background: #f6f6f6;
+  width: 100%;
+  height: 50px;
+}
+.alertButton:hover {
+  background: #ebf6ff;
+}
+
+.notificationSettings {
+  text-align: center;
+}
+.notificationSettings2 {
+  text-align: center;
+}
+.notificationmessage:hover {
+  background-color: rgb(246, 246, 246); /* Background color on hover */
+}
+/* notifications.css or equivalent file */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-button:hover {
+  background-color: #e0e0e0;
+}
+
+.NotificationsTweetbookH1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 73px;
+  margin-left: 15px;
+
+}
+.notificationmessageSpan {
+  position: relative;
+  top: -10px;
+  left: 0px;
+}
+.notificationmessage {
+  border: 1px solid rgb(246, 246, 246);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 12px;
+  height: 60px;
+  margin-top: 0px;
+  background-color: transparent; /* Start with a transparent background */
+  transition: background-color 0.4s ease; /* Transition the background color over 1 second */
+  cursor: pointer;
+}
+.notificationmessage2 {
+  position: relative;
+  top: 30px;
+  left: 45px;
+}
+.fsfawsfawsfawf {
+  position: fixed;
+  bottom: 50px;
+}
+.TextMfefsfdfef {
+  width: 90%;
+  position: relative;
+  left: 25px;
+  font-weight: bold;
+}
+.SubscribeButtoUnblockn12422 {
+  position: absolute;
+  top: 3px;
+  margin-left: 10px;
+}
+.notificationSettingsBoxSettingsUScss2222 {
+  width: 95%;
+  position: relative;
+  top: 7px;
+  left: 14px;
+  height: 100%;
+  border-radius: 0px;
+}
+.UserCardclassName {
+  position: absolute;
+  top: 10px;
+  left: 15%;
+}
+.fawfasfawadsfawfasw {
+  position: absolute;
+  top: 60px;
+  left: 180%;
+}
+.fafwfaswfawasfawf {
+  position: relative;
+  left: 30%;
+}
+.dojfgoawfwfwsfw {
+  position: absolute;
+  left: 380%;
+}
+.pogiuijsepiougjoudgie {
+  position: absolute;
+  top: 20px;
+}
+.TextMfefsfdfef2 {
+  background: #00b7ff;
+  color: white;
+  font-weight: bold;
+  width: 90%;
+  position: relative;
+  left: 25px;
+}
+.inputDisplay13fdfew {
+  position: fixed;
+  bottom: 50px; /* Positioning from the bottom */
+  margin-left: 3px;
+  width: 29.8%; /* Width of 90% of the container */
+}
+.Postarticlemotion {
+  margin-top: 5px;
+  border-radius: 15px;
+}
+.ghffhjfthfghftt {
+  position: relative;
+  left: -6px;
+  width: 102%;
+}
+
+.dfsfdssedfssedsfes {
+  position: absolute;
+  top: 15px;
+  border-radius: 100%;
+  left: 230px;
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  .Postarticlemotion {
+    margin-top: 0px;
+    border-radius: 0px;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+}
+.oigdrogdorgrdhjpgrfgr {
+  position: relative;
+  top: -16px;
+  left: -10px;
+}
+.dfjosefosufefe {
+  position: relative;
+  top: 50px;
+}
+.dfjosefosufefeUserAvatar {
+  position: relative;
+  top: -45px;
+  left: 2px;
+}
+.dfjosefosufefeUserAvatar2 {
+  position: relative;
+  top: -40px;
+  left: 2px;
+}
+.ghffhjfthfghftt {
+  position: relative;
+  top: -30px;
+}
+.inputDisplay13 {
+  position: fixed;
+  bottom: 3px; /* Positioning from the bottom */
+  margin-left: 3px;
+  width: 29.8%; /* Width of 90% of the container */
+}
+@media (max-width: 640px) { /* Adjust this value based on your breakpoint for mobile */
+  .inputDisplay13 {
+    position: absolute;
+    left: 17px; /* Positioning from the left */
+    bottom: 20px; /* Positioning from the bottom */
+    width: 90%; /* Width of 90% of the container */
+  }
+
+  /* Other mobile-specific styles can go here */
+}
+
+.notificationmessageSpan2131 {
+  width: 30px;
+  position: absolute;
+  top: 23px;
+  left: 7px;
+  color: #0080ff;
+}
+.btnH1223523safeaw2 {
+  position: absolute;
+  bottom: 120px;
+  left: -15px;
+  font-weight: bold;
+  color: #606060;
+  border: 1px solid rgb(223, 223, 223);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.btnH1223523safeaw {
+  position: absolute;
+  bottom: 120px;
+  font-weight: bold;
+  color: #606060;
+  border: 1px solid rgb(223, 223, 223);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.AsideFooter132 {
+  position: absolute;
+  bottom: 40px;
+  left: -15px;
+}
+.AsideFooter13 {
+  position: absolute;
+  bottom: 20px;
+}
+.notificationmessageSpan2131234 {
+  width: 30px;
+  position: relative;
+  top: 25px;
+  left: -40px;
+  color: rgb(255, 113, 179);
+}
+.notification-count {
+  position: relative;
+  top: -40px;
+  border-radius: 100%;
+  background: rgb(255, 176, 176);
+  color: white;
+}
+.notification-count2 {
+  
+}
+ .bofeggegChatBubbleOvalLeftIcon:hover {
+  border-radius: 0px 0px 20px 20px;
+ }
+ .menu-container42 {
+  height: 45px;
+ }
+ .ChatBubbleOvalLeftIcon {
+  font-weight: bold;
+ }
+ .ChatBubbleOvalLeftIcon24 {
+  position: relative;
+  top: -5px;
+ }
+ .followingTopics {
+  font-weight: bolder;
+  font-size: 12px;
+  color: rgb(90, 90, 90);
+ }
+ .menu-container4Top34 {
+  position: relative;
+  top:100px;
+  height: 300px;
+  border-radius: 0px 0px 10px 10px;
+ }
+ .Message-button323334344 {
+  position: relative;
+  top: -10px;
+}
+.UpdateUsernameUserFollowing {
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack main children vertically */
+  gap: 1rem; /* Space between each vertical item */
+  position: relative;
+  left: -120px; /* Maintain existing styles */
+}
+
+.UpdateUsernameUserFollowing .flex {
+  display: flex; /* Align children in a row */
+  align-items: center; /* Vertically align items */
+  gap: 1rem; /* Space between the two buttons */
+}
+
+
+ .ChatBubbleOvalLeftIcon2 {
+  font-size: 12px;
+  position: relative;
+  top: -23px;
+  font-weight: bold;
+  left: 80px;
+ }
+ .Profilelink {
+  position: relative;
+  top: 2px;
+  font-weight: bold;
+ }
+ .setShareModalOpen2 {
+  position: relative;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a7a7a7;
+ }
+ .setShareModalOpen2:hover {
+  font-size: 30px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background: #f5f5f5;
+ }
+ .setShareModalOpen {
+  position: relative;
+  top: -15px;
+  left: 35px;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a7a7a7;
+}
+.handleShareplatform {
+  width: 105%;
+  margin-left: -10px;
+}
+ .setShareModalOpen:hover {
+  font-size: 30px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background: #f5f5f5;
+ }
+ .container42 {
+  position: relative;
+  top: -10px;
+  left: -5px;
+ }
+ .container423 {
+  position: relative;
+  top: -5px;
+  left: -5px;
+ }
+  .Public {
+    position: absolute;
+    top: 612px;
+    left: 624px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    border: 2px solid var(--light-border); /* Add a border */
+    background-color: var(--background-color); /* Background color */
+    color: var(--text-color); /* Text color */
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 0px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 0.25rem; /* 1 * 0.25rem = 0.25rem */
+    margin-bottom: 0.125rem; /* 0.5 * 0.25rem = 0.125rem */
+  }
+  .Private {
+    position: absolute;
+    top: 612px;
+    left: 922px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    border: 2px solid var(--light-border); /* Add a border */
+    background-color: var(--background-color); /* Background color */
+    color: var(--text-color); /* Text color */
+    width: 278px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    text-align: center;
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 0px; /* Rounded corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 0.25rem; /* 1 * 0.25rem = 0.25rem */
+    margin-bottom: 0.125rem; /* 0.5 * 0.25rem = 0.125rem */
+  }
+  
+  /* Hover and focus states */
+  .Public:focus,
+  .Public:hover,
+  .Public:active {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+    border-color: #1d9bf0; /* Blue border on hover */
+  }
+  
+  .Public:after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Position the line just below the button */
+    top: 46px;
+    border-radius: 15px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 50%; /* Line width */
+    height: 4px; /* Line thickness */
+    background-color: #1d9bf0; /* Blue line color */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .Public:focus:after,
+  .Public:hover:after,
+  .Public:active:after {
+    opacity: 1; /* Show the line on hover, focus, and active states */
+  }
+  
+  .Public.dark {
+    border-bottom: 1px solid var(--dark-border);
+  }
+  
+  .Private:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+  }
+  
+  .Private.dark {
+    border-bottom: 1px solid var(--dark-border);
+  }
+  
+  .Private:focus,
+  .Private:hover,
+  .Private:active {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+    border-color: #1d9bf0; /* Blue border on hover */
+  }
+  
+  .Private:after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Position the line just below the button */
+    top: 46px;
+    border-radius: 15px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 50%; /* Line width */
+    height: 4px; /* Line thickness */
+    background-color: #1d9bf0; /* Blue line color */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .Private:focus:after,
+  .Private:hover:after,
+  .Private:active:after {
+    opacity: 1; /* Show the line on hover, focus, and active states */
+  }
+  
+  /* Mobile responsive styles */
+  @media (max-width: 767px) {
+    .Public, .Private {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 100%;
+      max-width: 90%;
+      font-size: 16px; /* Adjusted font size for smaller screens */
+      height: 45px; /* Adjusted height for smaller screens */
+    }
+  
+  /* Hover and focus states */
+  .Public:focus,
+  .Public:hover,
+  .Public:active {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+    border-color: #1d9bf0; /* Blue border on hover */
+  }
+  
+  .Public:after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Position the line just below the button */
+    top: 41px;
+    border-radius: 15px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 50%; /* Line width */
+    height: 4px; /* Line thickness */
+    background-color: #1d9bf0; /* Blue line color */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .Public:focus:after,
+  .Public:hover:after,
+  .Public:active:after {
+    opacity: 1; /* Show the line on hover, focus, and active states */
+  }
+    .Private {
+      position: relative;
+      top: auto;
+      left: 12px;
+      width: 100%;
+      max-width: 90%;
+      font-size: 16px; /* Adjusted font size for smaller screens */
+      height: 45px; /* Adjusted height for smaller screens */
+    }
+    .Private:after {
+      content: '';
+      position: absolute;
+      bottom: -5px; /* Position the line just below the button */
+      top: 41px;
+      border-radius: 15px;
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center the line horizontally */
+      width: 50%; /* Line width */
+      height: 4px; /* Line thickness */
+      background-color: #1d9bf0; /* Blue line color */
+      opacity: 0; /* Hidden by default */
+      transition: opacity 0.3s ease; /* Smooth transition */
+    }
+  }
+  
+  
+  a,
+  input,
+  button,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply hover-animation bg-main-background font-twitter-chirp text-light-primary dark:text-dark-primary;
+  }
+}
+/* Default mobile styles */
+.scrollable-container {
+  overflow-y: auto;
+}
+.Subscribe_to {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.tweetbook23 {
+  font-size: 30px; /* Size of the logo text */
+  margin-top: -10px;
+  margin-left: 40px; /* Margin from the left side */
+  font-weight: bold; /* Makes the text bold */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font family */
+  color: #585858; /* Twitter-like blue color for prominence */
+}
+.borderMessages {
+  height: 100vh;
+  border: 1px solid rgb(240, 239, 239);
+  border-left: none;
+}
+.sfsfawsfButton {
+ position: relative;
+  border: none;
+}
+.usersmap {
+  width: 100%;
+}
+.Messag23es {
+  margin-top: -30px;
+  margin-left: 200px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.PeoplemessageAllow {
+  color: #585858;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 11px;
+}
+.messageAllow {
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  top: -5px;
+}
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  width: 30px;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+.checkbox2 {
+  color: #6f6f6f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.Filter {
+  color: #acacac;
+  font-weight: bold;
+  position: relative;
+  font-size: 12px;
+  top: 30px;
+  left: -100px;
+}
+
+.Filter3 {
+  color: #acacac;
+  position: relative;
+  font-size: 8px;
+  top: 30px;
+  left: -10px;
+}
+.group424 {
+  top: -1px;
+  margin-left: -400px;
+  color: #28a9ff;
+}
+.Createagroup {
+  position: relative;
+  top: -4px;
+  left: 5px;
+  color: #28a9ff;
+}
+.CreateGroup {
+  background: #000;
+  color: white;
+  width: 100%;
+  height: 50px;
+  border-radius: 105px;
+}
+.BOx241234 {
+  border-radius: 15px;
+  width: 400px;
+  height: 400px;
+}
+.BOx24123 {
+  border-radius: 15px;
+  width: 600px;
+  height: 600px;
+}
+.Xbuttonww {
+  position: relative;
+  top: 0px;
+  left: -10px;
+  width: 80px;
+  height: 40px;
+  background: #f3f3f3;
+  border-radius: 50%;
+}
+.Xbuttonww:hover {
+  width: 80px;
+  height: 40px;
+  background: #ebebeb;
+}
+.XbTN {
+  position: relative;
+  top: 5px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.textMessage {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.XbTN:hover {
+  background: #e6e6e6;
+}
+.group424W {
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgb(230, 230, 230);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.group424W:hover {
+  width: 100%;
+  background: #f3f6f8;
+}
+.scfwf {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 100%;
+  border-radius: 0px;
+  outline: none;
+}
+.borderMessagesinput {
+  outline: none;
+  border-radius: 105px;
+  background: none;
+  width: 95%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.main-tabdsgasgaweg {
+  border-radius: 100%;
+}
+.main-tabdsgasgaweg2 {
+  border-radius: 105px;
+  background: #f1f7fd;
+  color: #8c8c8c;
+  font-weight: bold;
+}
+.issuesagw2 {
+  position: relative;
+  top: -5px;
+  left: 40px;
+}
+.main-tabdsgasgaweg22 {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.scaggas22gawsfw {
+  position: relative;
+  top: 0px;
+  font-weight: bold;
+  left: -5px;
+  width: 20px;
+}
+.inputSpamInappropriate {
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+.SpamBtn2 {
+  transition: background-color 0.3s ease; /* Add transition for smooth background color change */
+  position: relative;
+  top: -7.9px;
+}
+.SpamInappropriate222 {
+  position: relative;
+  top: -7.9px;
+}
+.SpamBtn2:hover {
+  background: #f1f7fd; /* Change background color on hover */
+  cursor: pointer;
+}
+
+.SpamBtn {
+  transition: background-color 0.3s ease; /* Add transition for smooth background color change */
+}
+
+.SpamBtn:hover {
+  background: #f1f7fd; /* Change background color on hover */
+  cursor: pointer;
+}
+
+.main-tabdsgasgaweg22:hover {
+background: rgb(225, 225, 225);
+}
+.main-tabdsgasgaweg22:active {
+  background: rgb(213, 213, 213);
+  }
+.SpamInappropriate {
+  position: relative;
+  top: -10px;
+  left: 30px;
+  color: #3b3b3b;
+  font-weight: bold;
+}
+.SpamInappropriate2 {
+  font-weight: bold;
+    font-size: 23px;
+    position: relative;
+    top: 7px;
+    color: #6e6e6e;
+    left: 5px;
+}
+.sfsfawsfButton {
+  position: relative;
+  top:17px;
+  left: 5px;
+}
+.borderMessagesinput4 {
+  height: 80px;
+}
+.borderMessagesinput2 {
+  outline: none;
+  border-radius: 105px;
+  border: none;
+  background: #eff3f4;
+}
+.SubmithandleSubmit {
+  color: rgb(180, 180, 180);
+  border-radius: 5px;
+  width: 40%;
+}
+
+.SubmithandleSubmitNew {
+  color: rgb(180, 180, 180);
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  top: -6px;
+}
+.inputSubmithandleSubmit {
+  outline: none;
+  border: 1px solid #ebebeb;
+  height: 50px;
+  
+}
+.respondPlease {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+.button_submit_handleSubmit2div {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #eff3f4;
+}
+  .messagestext {
+    background: #1d9bfc;
+    color: white;
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    width: 190%; 
+    border-radius: 100px 100px 100px 0px;
+  }
+      /* For Webkit-based browsers (Chrome, Safari) */
+.messages::-webkit-scrollbar {
+color: #000000;
+width: 8px;
+border-radius: 15px;
+}
+.notificationmessageSpan24 {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  color: rgb(180, 180, 180);
+  font-size: 10px;
+}
+.threeDotsIcon {
+  position: relative;
+  top: -1px;
+  left: 10px;
+}
+.feedback-form {
+  position: relative;
+  top: 100px;
+  border: none;
+  width: 60%;
+  border-radius: 10px;
+  background: none;
+  box-shadow: 4px 4px 34px 4px rgb(242, 242, 242);
+}
+.messages::-webkit-scrollbar-thumb {
+  background: #c5cacd; /* Color of the scrollbar thumb */
+border-radius: 15px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+border-radius: 15px;
+background: #c5cacd; /* Color of the scrollbar thumb when hovered */
+}
+.users {
+  background: #eff3f4;
+  border: 1.5px solid rgb(157, 180, 255);
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  width: 109%;
+  position: relative;
+  left: -16px;
+  height: 60px;
+  // margin-bottom: 10px; /* This adds a 3-pixel gap between buttons */
+}
+.users2 {
+  background: #f6faff;
+  border: 2px solid rgb(100, 137, 255);
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  width: 107%;
+  position: relative;
+  top: 21px;
+  left: -16px;
+  height: 60px;
+  margin-bottom: 5px; /* This adds a 3-pixel gap between buttons */
+}
+.button-sidbar {
+  margin-right: 2px; /* Adds a 10-pixel gap between each button */
+  background: none;
+  border: 3px solid rgb(210, 221, 255);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 32%;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0 ;
+  color: rgb(66, 66, 66);
+}
+.textMessage2 {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.ButtonSCSS{
+  width: 100%;
+  position: relative;
+  top: 280px;
+  left: -40px;
+  text-align: center;
+  background: rgb(100, 137, 255);
+  color: white;
+}
+
+.button-sidbardiv{
+  position: relative;
+  top: -30px;
+  left: 7px;
+}
+.button-sidbar:hover {
+  background: #f6faff;
+}
+.button-sidbarAll {
+  margin-left: 2px; /* Adds a 10-pixel gap between each button */
+
+}
+.button-sidbar2 {
+  margin-right: 28px; /* Adds a 10-pixel gap between each button */
+  background: #f6faff;
+}
+.custom_dgsgedslgje {
+  border-radius: 0px;
+  height: 45px;
+  width: 100%;
+}
+.custom_dgsgedslgje:hover {
+  background: #eaf5ff;
+}
+.custom_dgsgedslgje:active {
+  background: #daecfd;
+}
+.fafwsfwfdsfw {
+  position: relative;
+  top: -25px;
+}
+.userusername {
+  position: relative;
+  top: 10px;
+}
+.ButtonBellIcon {
+  position: relative;
+  top: -45px;
+  left: 48%;
+}
+.users:hover {
+  background: #f0f6fd;
+  border: 1.5px solid rgb(142, 168, 254);
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+.users2:hover {
+  background: #f0f6fd;
+  border: 2px solid rgb(142, 168, 254);
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+.Selectamessage {
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  top: 50%;
+}
+.backBtn123 {
+  position: relative;
+  top: -15px;
+  left: -25px;
+  width: 14%;
+  border-radius: 105px;
+  color: rgb(167, 167, 167);
+  font-weight: bold;
+  background: #000;
+}
+.SelectamessageChoose {
+  color: #3d3d3d;
+  font-size: 12px;
+}
+.btnH12 {
+  height: 60px;
+  border-radius: 0px;
+}
+.btnH1223523 {
+  border-radius: 10px 10px 0px 0px;
+}
+.btnH12P {
+  position: relative;
+  top: 0px;
+}
+.btnH12P22 {
+  position: relative;
+  top: -5px;
+}
+.gagagw2 {
+  border-radius: 11px 11px 0px 0px;
+}
+.EnterADdiv {
+  position: relative;
+  top: 100px;
+  border: 1px solid #cfe5fb;
+  padding: 20px;
+  border-radius: 20px;
+}
+.EnterADdiv2 {
+  position: relative;
+  top: 10px;
+  border: 1px solid #f5f5f5;
+  padding: 20px;
+  width: 100%;
+  border-radius: 0px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.classNameHome {
+  width: 35%;
+}
+.buttonasdad {
+  border-radius: 100%;
+}
+/* Additional styles for the white square menu */
+.BORDERASD {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  width: 40%;
+  height: 60%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.ad-center-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
+.report-button232 {
+  background: none;
+  position: relative;
+  top: 20px;
+  color: #333;
+  width: 200px;
+  height: 40px;
+  border-radius: 105px;
+  display: block; /* Ensures the button takes up the full width of its container */
+  margin-bottom: 10px; /* Adds a 10px gap below each button */
+  transition: background 0.1s ease, color 0.3s ease; /* Adjust timing and easing function as needed */
+}
+.Customizesee {
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  background: #cbdfeb;
+  position: relative;
+  top: 20px;
+  padding: 10px;
+}
+.a59eQcimdgsge {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+.ChangeclassNameh1 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
+.HeartIcon {
+  width: 25px;
+  position: relative;
+  top: 8px;
+  left: 14px;
+}
+.HeartIcon2 {
+  position: relative;
+  top: -17px;
+  left: 10px;
+}
+.ChangeclassNameh12 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  padding: 10px;
+}
+.LikeUnblock {
+  margin-left: -80px;
+}
+.report-button232:hover {
+  background: #cfe5fb;
+}
+.TweetbookspanAD {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: rgb(107, 107, 107);
+  margin-left: 10px;
+}
+.ViewPostSite {
+  position: relative;
+  top: 10px;
+  margin-left: 20px;
+  background: #cfe5fb;
+  width: 20%;
+  height: 40px;
+  border-radius: 105px;
+}
+.ViewPostSite2 {
+  position: relative;
+  top: 26px;
+  margin-left: 5px;
+  background: #cfe5fb;
+  width: 20%;
+  height: 40px;
+  border-radius: 105px;
+}
+.ViewPostSite2:hover {
+  background: #e7e7e7;
+}
+.ViewPostSite2:active {
+  background: #c6c5c5;
+}
+.ViewPostSite:hover {
+  background: #e7e7e7;
+}
+.ViewPostSite:active {
+  background: #c6c5c5;
+}
+.TweetbookCreateadvancedText {
+  font-weight: bold;
+  color:  #7db7f0;
+  position: relative;
+  top: -10px;
+}
+.inputtextAD {
+  outline: none;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  background: #f5faff;
+  border-radius: 8px;
+}
+.fileInputFile {
+  background: #f5faff;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+.fileInputFiletexy {
+  position: relative;
+  top: 18px;
+  color: #6a6a6a;
+  font-weight: bold;
+}
+.fileInputFile23 {
+  background: #f5faff;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  position: relative;
+  top: -5px;
+}
+  .fileInputFile2 {
+    background: #f5faff;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+  }
+  .fileInputFiletexy2 {
+    position: relative;
+    top: 0px;
+    color: #6a6a6a;
+    font-weight: bold;
+  }
+.inputtextAD::placeholder {
+  position: relative;
+  left: 10px;
+}
+/* General Modal Styling */
+.modalClassNameCreate {
+  max-width: 400px;
+  width: 100%;
+  background-color: none; /* Background color for the modal */
+  border-radius: 16px;
+  padding: 20px;
+  color: #2e2e2e; /* Text color */
+}
+
+/* Header Styling */
+.modalClassNameCreate h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000000; /* Header text color */
+}
+.CloseBtn2dds {
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+}
+.CloseBtn2dds:hover {
+  background: rgb(243, 243, 243);
+}
+.CloseBtn2dds:active {
+  background: rgb(227, 227, 227);
+}
+.Reportsections {
+  position: relative;
+  left: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #828282;
+}
+/* Dropdown Styling */
+.modalClassNameCreate select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4a4a4a; /* Border color */
+  border-radius: 8px;
+  background-color: #333333; /* Background color */
+  color: #ffffff; /* Text color */
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+/* Input Styling */
+.modalClassNameCreate input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4a4a4a; /* Border color */
+  border-radius: 8px;
+  background-color: #333333; /* Background color */
+  color: #ffffff; /* Text color */
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Button Styling */
+.modalClassNameCreate button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #841df2; /* Button background color */
+  color: #ffffff; /* Button text color */
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.modalClassNameCreate button:hover {
+  background-color: #b168ff; /* Hover background color */
+}
+
+/* Calendar Button Styling */
+.modalClassNameCreate .calendar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333; /* Calendar button background color */
+  color: #ffffff; /* Calendar button text/icon color */
+  margin-top: 10px;
+}
+
+/* Close Button Styling */
+.report-modal .closehandleSens {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #ffffff; /* Close button text color */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.ccacac {
+  color: #2e2e2e;
+}
+.buttonmotionnav {
+  background: none;
+  color: black;
+  width: 190px;
+  height: 45px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  outline: none; /* Remove default focus outline */
+  transition: color 0.3s ease; /* Optional: Add a transition for color */
+}
+
+.buttonmotionnav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-radius: 100px;
+  height: 5px; /* Thickness of the underline */
+  background: rgb(59, 124, 208); /* Color of the underline */
+  transition: width 0.3s ease; /* Transition for the underline width */
+}
+
+.buttonmotionnav:focus::after,
+.buttonmotionnav.clicked::after {
+  width: 100%;
+}
+
+
+.Join123 {
+  position: relative;
+  top: -10px;
+}
+
+.ForyouFollowing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 49.7%;
+  transition: background 0.3s ease; /* Smooth transition */
+}
+.hrclassName {
+  border: 1px solid rgb(246, 246, 246);
+  position: relative;
+  top: -10px;
+  left: -16px;
+  width: 805%;
+}
+.ForyouFollowing2 {
+  height: 50px;
+  width: 405%;
+  position: relative;
+  top: -8px;
+  left: 269px;
+  transition: background 0.3s ease; /* Smooth transition */
+}
+.seeposts {
+  height: 50px;
+  width: 100%;
+  background: none;
+  border: 2px solid rgb(243, 243, 243);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #469fff;
+  transition: background 0.3s ease; /* Smooth transition */
+}
+.seeposts:hover {
+  background: rgb(250, 250, 250);
+}
+.seeposts:active {
+  background: rgb(229, 227, 227);
+}
+
+// .ForyouFollowing:active {
+//   background: rgb(217, 215, 215);
+// }
+
+// .ForyouFollowing2:active {
+//   background: rgb(217, 215, 215);
+// }
+
+// .ForyouFollowing:hover {
+//   background: rgb(232, 232, 232);
+// }
+
+// .ForyouFollowing2:hover {
+//   background: rgb(232, 232, 232);
+// }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .ForyouFollowing {
+    width: 40%; /* Adjust width for smaller screens */
+    left: 0;
+  }
+
+  .ForyouFollowing2 {
+    width: 50%; /* Adjust width for smaller screens */
+    left: 0; /* Ensure proper alignment on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ForyouFollowing {
+    width: 80%; /* Full width on smaller phones */
+    left: 0;
+  }
+
+  .ForyouFollowing2 {
+    width: 80%; /* Full width on smaller phones */
+    left: 0;
+  }
+}
+
+.tweetbook2Tweetbook {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+.accent-tab2 {
+  position: fixed; /* Changed to fixed positioning to stay visible on screen */
+  color: #000;
+  top: 7.5px; /* Position from the bottom */
+  right: 10px; /* Position from the right side */
+  width: 200px; /* Fixed width */
+  max-width: 200px; /* Ensure it doesn't exceed 200px */
+  min-width: 200px; /* Ensure it does not shrink below 200px */
+  padding: 0.5rem 1rem; /* Padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
+  text-align: center; /* Center text inside the button */
+  display: inline-flex; /* Flexbox layout */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  z-index: 1000; /* Ensure the button is in front of other elements */
+  border-radius: 0px;
+}
+.setSearchQuery234 {
+  position: relative;
+  top: -51px;
+  padding: 0.75rem 1rem; /* px-3 py-2 */
+  background-color: none;
+  border: 1px solid rgb(239, 239, 239);
+  max-width: 450px;
+  width: 450px;
+  height: 58px;
+  border-radius: 0px; /* rounded-md */
+  margin-right: 0.5rem; /* mr-2 */
+  outline: none; /* focus:outline-none */
+}
+
+/* Ensure the media query applies correctly */
+@media only screen and (max-width: 768px) {
+  .accent-tab2 {
+    background: rgb(231, 231, 231); /* Temporary background color to test */
+    width: 50px;
+    max-width: 50px;    
+  }
+}
+
+
+@media (max-width: 639px) {
+  .accent-tab2 {
+    position: static;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1280px) {
+  .accent-tab2 {
+    width: 91.6667%; /* xl:w-11/12 in Tailwind translates to 91.6667% */
+  }
+}
+// tweetbookddddddddddddddddddddddddd
+.Anything2Dive {
+  position: relative;
+  top: 100px;
+  margin-left: 10%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.page-container24 {
+  position: relative;
+  top: 300px;
+  margin-left: 20%;
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+}
+.Announcements {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.Tweetbookspan2 {
+  position: relative;
+  top: 50px;
+  margin-left: 20px;
+}
+.TweetbookAIw {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.Announcements24 {
+  color: #42aaff;
+  cursor: pointer;
+}
+.Anything2Dive23 {
+  font-size: 20px;
+  color: #727272;
+}
+.Anything2Dive2 {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+}
+.Anything2Dive232 {
+  font-size: 14px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.box35 {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  border: 1px solid rgb(234, 234, 234);
+  background: rgb(234, 234, 234);
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+.moreBio {
+  position: relative;
+  top: -31px;
+  margin-left: 330px;
+}
+.menu-containe23 {
+  background: white;
+  box-shadow: 0 1px 7px 1px rgb(208, 208, 208);
+  border-radius: 10px;
+}
+.accent-tab22 {
+  width: 300px;
+  border: 1px solid rgb(230, 230, 230);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  height: 40px;
+  padding-top: 10px; /* Add padding to position the text */
+  line-height: 1; /* Set the line height to keep the text near the top */
+  text-align: left; /* Optional: Align the text to the left */
+  display: flex;
+  align-items: flex-start;
+}
+.accent-tab222 {
+  width: 300px;
+  border: 1px solid rgb(230, 230, 230);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0 0 10px 10px;
+  height: 40px;
+  padding-top: 10px; /* Add padding to position the text */
+  line-height: 1; /* Set the line height to keep the text near the top */
+  text-align: left; /* Optional: Align the text to the left */
+  display: flex;
+  align-items: flex-start;
+}
+.accent-tab222:hover {
+  border-radius: 0 0 10px 10px;
+}
+.TweetbookSearchinput2 {
+  width: 250%;
+}
+.Closebtnn123 {
+  background: #000;
+  color: white;
+  width: 100px;
+  border-radius: 105px;
+  margin-top: -5px;
+  height:30px;
+  margin-right: -100px;
+}
+.dgwhwhdshsegds3 {
+  margin-left: -50px;
+}
+.Confirm2q4215 {
+  background: #000;
+  color: white;
+  width: 100px;
+  border-radius: 105px;
+  margin-top: -5px;
+  height:30px;
+  margin-right: -100px;
+}
+.accent-tab2222 {
+  width: 300px;
+  border: 1px solid rgb(230, 230, 230);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0 0 0px 0px;
+  height: 40px;
+  padding-top: 10px; /* Add padding to position the text */
+  line-height: 1; /* Set the line height to keep the text near the top */
+  text-align: left; /* Optional: Align the text to the left */
+  display: flex;
+  align-items: flex-start;
+}
+.accent-tab2222 {
+  border-radius: 10px 10px 0px 0px;
+}
+.box354 {
+  position: relative;
+  top: -75px;
+  left: 560px;
+  border: 1px solid rgb(234, 234, 234);
+  background: rgb(234, 234, 234);
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+.box3545 {
+  position: relative;
+  top: -247px;
+  left: 820px;
+  border: 1px solid rgb(234, 234, 234);
+  background: rgb(234, 234, 234);
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+.box35453 {
+  position: relative;
+  top: -147px;
+  left: 120px;
+  border: 1px solid rgb(234, 234, 234);
+  background: rgb(234, 234, 234);
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+.box354534 {
+  position: relative;
+  top: -321px;
+  left: 380px;
+  border: 1px solid rgb(234, 234, 234);
+  background: rgb(234, 234, 234);
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+.box354533 {
+  position: relative;
+  top: -495px;
+  left: 640px;
+  border: 1px solid rgb(234, 234, 234);
+  background: rgb(234, 234, 234);
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+.box354555 {
+  position: relative;
+  top: -669px;
+  left: 900px;
+  border: 1px solid rgb(234, 234, 234);
+  background: rgb(234, 234, 234);
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+}
+.Anything2Dive3 {
+  position: relative;
+  top: -200px;
+  margin-left: 10%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.Anything2Dive2324 {
+  position: relative;
+  top: -200px;
+  margin-left: 10%;
+}
+.Tweetbookspan23 {
+  position: relative;
+  top: 50px;
+  margin-left: 20px;
+}
+.boxV2Anything {
+  position: relative;
+  top: 100px;
+  margin-left: 10%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #696969;
+}
+.ReportaProblem {
+  border-radius: 0 0 10px 10px;
+}
+.gagagw {
+  height: 40px;
+}
+.csacacvasvasf212 {
+  width: 500px;
+  margin: 0 auto; /* Centers the element horizontally */
+  position: absolute; /* Positions the element relative to the viewport */
+  top: 50%; /* Moves the element 50% down from the top of the viewport */
+  left: 50%; /* Moves the element 50% right from the left of the viewport */
+  transform: translate(-50%, -50%); /* Offsets the element back by 50% of its own width and height to fully center it */
+}
+.csacacvasvasf2123 {
+  width: 90%;
+}
+.customdggse {
+  position: relative;
+  left: -14px;
+  top: -1px;
+}
+.Tweetbook23 {
+  font-size: 20px;
+  font-weight: bold; /* Makes the text bold */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font family */
+  color: #c8c8c8; /* Twitter-like blue color for prominence */
+
+}
+// .classNamehover-animation {
+//   width: 40px;
+// }
+.btnH12Pfggsgse {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  background: rgb(29, 155, 240);
+  color: white;
+  border-radius: 100%;
+}
+.button2hyeh14 {
+  position: relative;
+  top: -30px;
+}
+.btnH12Pfggsgse222 {
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  color: white;
+  border-radius: 100%;
+}
+.CreateLiveStream2 {
+  border-radius: 8px;
+  width: 95%;
+  position: relative;
+  top: 0px;
+  left: 15px;
+  color: #454545;
+}
+.btnH12P22 {
+  position: relative;
+  top: 2px;
+  left: 20px;
+}
+.fsdthjdjhjrj {
+  position: relative;
+  top: -15px;
+  left: 15px;
+}
+.ProfileTEct222 {
+  position: relative;
+  top: 8px;
+  left: 45px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  margin: 0;
+  padding-left: 0;
+}
+.CloseBtun122divclassName {
+height: 220px;
+}
+.fsdthjdjhjrj212 {
+  position: absolute;
+  top: 63px;
+  right: 10px;
+}
+.ProfileTEct2222 {
+  position: relative;
+  top: 0px;
+  left: 45px;
+  display: grid;
+  font-weight: bold;
+  color: #686868;
+  grid-template-columns: 1fr;
+  text-align: left;
+  margin: 0;
+  padding-left: 0;
+}
+.Mostrelevant {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  background: #00000008;
+  position: relative;
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid rgb(210, 210, 210);
+  top: 8px;
+}
+
+.sfafwfsfwTweet {
+  position: relative;
+  top: -4px;
+}
+.Subscribebutton {
+ background: #000;
+ color: white;
+ height: 28px;
+ position: relative;
+ left: -5px;
+ width: 95px;
+ border-radius: 105px;
+}
+.SubscribeSpan {
+  font-size: 14px;
+  font-weight: bold;
+}
+.MostrelevantModal {
+  position: relative;
+  border-top: none !important;
+  border-radius: 0px 0px 15px 15px;
+  border: 1px solid rgb(210, 210, 210);
+  background: #00000008;
+  width: 100%;
+  height: 100px;
+  top: 8px;
+}
+.custom-button2hyehfsfss {
+  border-radius: 0px 0px 15px 15px;
+}
+.fsdthjdjhjrj2 {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+.CloseBtun122 {
+  background: #000;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  position: relative;
+  top: 20px;
+  height: 40px;
+  border-radius: 105px;
+}
+.btnH12P222 {
+  position: relative;
+  top: -10px;
+  left: 30px;
+}
+.ADTweetbook23522 {
+  position: relative;
+  top: -16px;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.ADTweetbook2352 {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.CreateLiveStream {
+  border-radius: 8px;
+  width: 95%;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+.CreateLiveStream:hover {
+  background: #202020;
+}
+.dsrgdgsedsgsgegd {
+  position: relative;
+  top: -100px;
+}
+.btnH12P2422224 {
+  position: relative;
+  top: -7px;
+  left: 5px;
+}
+.sdgfagdsgdgsgdge {
+  position: relative;
+  top: -20px;
+}
+.dstgagdsgsegdge {
+  position: relative;
+  left: -70px;
+}
+.dgsgsesdgsgdsgsedge {
+  position: relative;
+  left: -10px;
+}
+.communitiesbutton2 {
+  padding: 10px;
+  background: black;
+  border-radius: 200px;
+  color: white;
+  width: 50%;
+  position: relative;
+  top: 0px;
+  left: 50px;
+}
+.sdgsdgsgdsfgseg {
+  position: relative;
+  left: -100px;
+}
+.dgdsgsdgsdgsgsgsege {
+  position: relative;
+  top: -20px;
+}
+.dfssagdgsge {
+  position: relative;
+  top: -20px;
+}
+.communitiesbutton3 {
+  padding: 10px;
+  background: black;
+  border-radius: 200px;
+  color: white;
+  width: 40%;
+  position: relative;
+  top: 0px;
+  left: 15px;
+}
+.communitiesbutton {
+  padding: 10px;
+  background: black;
+  border-radius: 200px;
+  color: white;
+  width: 30%;
+  position: relative;
+  top: 0px;
+  left: 35px;
+}
+.dgsdsdghsdhsghee {
+  position: relative;
+  left: 28%;
+}
+.Message-button322 {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  width: 22%;
+  height: 22px;
+}
+.btnH12P242 {
+  position: relative;
+  top: -3px;
+  left: 8px;
+}
+.custom-button4322 {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* equivalent to gap-4 */
+  padding: 1rem; /* equivalent to p-2 */
+  font-size: 1.25rem; /* equivalent to text-xl */
+  // transition: all 0.2s ease-in-out; /* equivalent to transition-all duration-200 ease-in-out */
+  font-family: var(--font-caption); /* assuming font-caption is a custom font */
+  width: 100%; /* equivalent to w-[84%] */
+  margin-bottom: 5px; /* 10 pixels spacing between buttons */
+  position: relative; /* Use fixed positioning to keep it in place */
+  top: 0px; /* Align to the top of the viewport */
+  left: 0px;
+  margin-left: 10px;
+  height: 49px;
+  border-radius: 0px;
+}
+@media (max-width: 800px) {
+  .custom-button4322 {
+    border-radius: 0px; /* Full circular button shape */
+    height: 49px; /* Ensure the height remains fixed */
+    width: 100%; /* Circular button width matching height */
+    left: -10px; /* Adjust positioning for mobile if needed */
+  }
+}
+.custom-button4322:hover {
+  background: none;
+  width: 100%; /* equivalent to w-[84%] */
+}
+
+.custom-button4322:focus-visible {
+  outline: 2px solid #878a8c; /* equivalent to group-focus-visible:ring-2 group-focus-visible:ring-[#878a8c] */
+}
+
+.custom-button4322:focus-visible.dark {
+  outline-color: white; /* equivalent to dark:group-focus-visible:ring-white */
+}
+
+
+
+.custom-button4322.xs-padding {
+  padding: 0.75rem; /* equivalent to xs:p-3 */
+}
+
+.custom-button4322.xl-padding {
+  padding-right: 1.25rem; /* equivalent to xl:pr-5 */
+}
+
+
+.custom-button4322:focus-visible {
+  outline: 2px solid #878a8c; /* equivalent to group-focus-visible:ring-2 group-focus-visible:ring-[#878a8c] */
+}
+
+.custom-button4322:focus-visible.dark {
+  outline-color: white; /* equivalent to dark:group-focus-visible:ring-white */
+}
+.dfoisehfuisefe {
+  position: relative;
+  left: -10px;
+}
+.custom-button4322:hover.dark {
+  background-color: rgba(var(--dark-primary-rgb), 0.1); /* equivalent to dark:group-hover:bg-dark-primary/10 */
+}
+
+.custom-button4322.xs-padding {
+  padding: 0.75rem; /* equivalent to xs:p-3 */
+}
+
+.custom-button4322.xl-padding {
+  padding-right: 1.25rem; /* equivalent to xl:pr-5 */
+}
+.custom-button4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* equivalent to gap-4 */
+  padding: 1rem; /* equivalent to p-2 */
+  font-size: 1.25rem; /* equivalent to text-xl */
+  // transition: all 0.2s ease-in-out; /* equivalent to transition-all duration-200 ease-in-out */
+  font-family: var(--font-caption); /* assuming font-caption is a custom font */
+  width: 100%; /* equivalent to w-[84%] */
+  margin-bottom: 5px; /* 10 pixels spacing between buttons */
+  position: relative; /* Use fixed positioning to keep it in place */
+  top: 0px; /* Align to the top of the viewport */
+  left: 0px;
+  height: 49px;
+  border-radius: 0px;
+}
+@media (max-width: 600px) {
+  .ForyouFollowingdgojes {
+      display: none;
+  }
+}
+/* Media query for mobile (phone) view */
+@media (max-width: 600px) {
+  .custom-button4 {
+    border-radius: 100%; /* Full circular button shape */
+    height: 49px; /* Ensure the height remains fixed */
+    width: 100%; /* Circular button width matching height */
+    left: 0px; /* Adjust positioning for mobile if needed */
+  }
+}
+/* Media query for mobile (phone) view */
+@media (max-width: 800px) {
+  .custom-button4 {
+    border-radius: 100%; /* Full circular button shape */
+    height: 49px; /* Ensure the height remains fixed */
+    width: 100%; /* Circular button width matching height */
+    left: 0px; /* Adjust positioning for mobile if needed */
+  }
+}
+.custom-button4:hover {
+  background: none;
+  width: 100%; /* equivalent to w-[84%] */
+}
+
+.custom-button4:focus-visible {
+  outline: 2px solid #878a8c; /* equivalent to group-focus-visible:ring-2 group-focus-visible:ring-[#878a8c] */
+}
+
+.custom-button4:focus-visible.dark {
+  outline-color: white; /* equivalent to dark:group-focus-visible:ring-white */
+}
+
+
+
+.custom-button4.xs-padding {
+  padding: 0.75rem; /* equivalent to xs:p-3 */
+}
+
+.custom-button4.xl-padding {
+  padding-right: 1.25rem; /* equivalent to xl:pr-5 */
+}
+
+
+.custom-button4:focus-visible {
+  outline: 2px solid #878a8c; /* equivalent to group-focus-visible:ring-2 group-focus-visible:ring-[#878a8c] */
+}
+
+.custom-button4:focus-visible.dark {
+  outline-color: white; /* equivalent to dark:group-focus-visible:ring-white */
+}
+
+.custom-button4:hover.dark {
+  background-color: rgba(var(--dark-primary-rgb), 0.1); /* equivalent to dark:group-hover:bg-dark-primary/10 */
+}
+
+.custom-button4.xs-padding {
+  padding: 0.75rem; /* equivalent to xs:p-3 */
+}
+
+.custom-button4.xl-padding {
+  padding-right: 1.25rem; /* equivalent to xl:pr-5 */
+}
+
+
+.ADTweetbook3232 {
+  border-radius: 15px;
+  position: relative;
+  top: 10px;
+}
+
+.dfaefdfsdfdsfe {
+  position: absolute;
+  z-index: 9999;
+}
+.dssfsfsdfdsfe {
+  border-radius: 105px;
+  position: relative;
+  top: 6px;
+}
+ 
+/* Desktop styles */
+@media (min-width: 768px) {
+  .scrollable-container2 {
+    max-height: 100vh; /* Max height to fill the viewport height */
+    height: 100vh; /* Allow height to adjust based on content */
+    width: 17%; /* Fixed width */
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    position: fixed; /* Use fixed positioning to keep it in place */
+    top: 50px; /* Align to the top of the viewport */
+    left: 0px; /* Align to the left of the viewport */
+  }
+
+  // .TweetbookHome {
+  //   position: absolute; /* Use fixed positioning to keep it in place */
+  //   top: 0px; /* Align to the top of the viewport */
+  //   left: 625px; /* Align to the left of the viewport */
+  // }
+  // .TweetbookHome2 {
+  //   position: absolute; /* Use fixed positioning to keep it in place */
+  //   top: 0px; /* Align to the top of the viewport */
+  //   left: 1255px; /* Align to the left of the viewport */
+  // }
+  .scrollable-container3 {
+    max-height: 100vh; /* Max height to fill the viewport height */
+    height: 100vh; /* Allow height to adjust based on content */
+    width: 17%; /* Fixed width */
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    position: fixed; /* Use fixed positioning to keep it in place */
+    top: 0px; /* Align to the top of the viewport */
+    left: 0px; /* Align to the left of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  }
+  // .TweetbookSearch {
+  //   position: absolute;
+  //   top: -54px;
+  //   left: -300px;
+  //   width: 500px;
+  // }
+  
+  .custom-buttonhover { 
+    transition: all 0.2s ease-in-out; /* Smooth transition for all properties over 0.2 seconds */
+    width: 16.4%; /* Button width set to 3.5% of its container */
+    border-radius: 15px; /* Rounded corners with a radius of 15px */
+    font-family: var(--font-caption); /* Applies the custom font defined in your CSS variables */
+    position: fixed; /* Fixes the button position relative to the viewport */
+    background: none; /* No background color */
+    border: none; /* Removes the border */
+    bottom: 3px;
+    margin-left: 5px;
+    border-radius: 0px;
+    border: none; /* Border to form the square */
+  }
+  
+  // .custom-buttonhover { 
+  //   transition: all 0.2s ease-in-out; /* Smooth transition for all properties over 0.2 seconds */
+  //   width: 100%; /* Button width set to 3.5% of its container */
+  //   border-radius: 15px; /* Rounded corners with a radius of 15px */
+  //   font-family: var(--font-caption); /* Applies the custom font defined in your CSS variables */
+  //   position: relative; /* Fixes the button position relative to the viewport */
+  //   background: none; /* No background color */
+  //   border: none; /* Removes the border */
+  //   bottom: 3px;
+  //   border-radius: 0px;
+  //   border: none; /* Border to form the square */
+  // }
+  
+   
+/* Default styles for mobile (hidden by default) */
+.AsideFooterSidbar {
+  display: none;
+}
+
+/* Styles for desktop */
+@media (min-width: 768px) {
+  .AsideFooterSidbar {
+    display: block;
+    width: 15%; /* Button width set to 16% of its container */
+    margin-bottom: 10px; /* 10 pixels spacing below the button */
+    position: fixed; /* Fixes the button position relative to the viewport */
+    bottom: 30px; /* Positions the button 30px from the bottom of the viewport */
+    margin-left: 15px; /* Margin left of 0px */
+    border: 1px solid rgb(227, 227, 227);
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+  }
+}
+.text-xl33 {
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+  position: relative;
+  top: 23px;
+}
+.custom-button2323 {
+  font-size: 14px;
+  color: none;
+  position: relative;
+  top: -10px;
+  margin-left: 140px;
+}
+.custom-button434 {
+  margin-left: 10px;
+}
+.input-field {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px; /* Space of 10px below each button */
+  background: rgb(243, 232, 248);
+}
+
+.input-field::placeholder {
+  color: rgb(19, 19, 19); /* Change placeholder text color */
+  font-size: 16px; /* Adjust placeholder text size */
+  position: relative;
+  left: 10px;
+}
+
+.Upgrade {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.CancelPremium {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: -10px;
+  font-weight: bold;
+}
+.ProcessingBuy {
+  width: 100%;
+  background: rgb(243, 232, 248);
+  border-radius: 10px;
+}
+.ProcessingBuy:hover {
+  background: rgb(238, 221, 246);
+}
+.ProcessingBuy:active {
+  background: rgb(238, 216, 248);
+}
+/* CSS for borderbox4 */
+.borderbox4 {
+  position: fixed; /* Fixes the modal position relative to the viewport */
+  border: none; /* Removes the border */
+  bottom: 84px; /* Center from the top */
+  margin-left: 20px;
+  border-radius: 10px; /* Adds some border-radius for styling */
+}
+.borderbox42454 {
+  position: fixed; /* Fixes the modal position relative to the viewport */
+  background: none; /* No background color */
+  border: none; /* Removes the border */
+  bottom: 154px; /* Center from the top */
+  margin-left: 5px;
+  border-radius: 10px; /* Adds some border-radius for styling */
+}
+.Logoutbtn1 {
+  border-radius: 10px 10px 0 0;
+}
+
+.report-modal {
+  background-color: none;
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+}
+
+.report-modal h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.report-textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+.report-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.send-report-button {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-report-button:disabled {
+  background-color: #d3d3d3;
+  color: rgb(0, 0, 0);
+  cursor: not-allowed;
+}
+
+.add-file-button {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.HeroIconButton {
+  position: absolute;
+  margin-top: -37px;
+  margin-left: 190px;
+}
+.HeroIconButton2 {
+  position: absolute;
+  margin-top: -37px;
+  margin-left: 320px;
+}
+.HeroIconButton23 {
+  position: absolute;
+  margin-top: -37px;
+  margin-left: 450px;
+}
+.absolutemt12 {
+  background: rgb(246, 246, 246);
+  position: relative;
+  top: -2px;
+}
+.absolutemt123 {
+  position: relative;
+  top: 6px;
+  left: 10px;
+}
+.Message-button32et4 {
+  height: 18px;
+  border-radius: 105px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+.NewsP {
+  position: relative;
+  top: -10.6px;
+  font-size: 13px;
+}
+.JoinourcommunityBio {
+  position: relative;
+  top: 25px;
+  left: -55px;
+  color: #676767;
+  font-size: 16px;
+}
+.HeroIconButtonLike {
+  margin-left: 50px;
+}
+.classNamekeyDev {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  cursor: pointer;
+}
+.ChatBubbleOvalLeftIconclassName {
+  margin-top: -2px;
+  margin-left: -1px;
+}
+/* CSS for menu-container */
+.menu-container323 {
+    z-index: 9999; /* Ensure it appears above other elements */
+    width: 300px; /* w-60 in Tailwind CSS */
+    @apply rounded-md bg-main-background; /* Ensure bg-main-background is semi-transparent */
+    backdrop-filter: blur(10px); /* Adjust the blur level */
+    outline: none;
+    box-shadow: #65778633 0px 0px 15px, #65778626 0px 0px 3px 1px;
+}
+.LoadingReport {
+  position: relative;
+  top: -8px;
+}
+.Commentaccent-tab {
+  position: relative;
+  top: 5px;
+  left: -10px;
+}
+.PosthiddenButton {
+  position: absolute;
+  top: 4px;
+  color: white;
+  font-weight: bold;
+  right: 7px;
+  border-radius: 6px;
+}
+.reportingWhat {
+  font-size: 30px;
+  font-weight: bold;
+}
+.reportingWhatspanText {
+  color: #0080ff;
+  cursor: pointer;
+}
+.custom-button2hyeh2dfege {
+  border-radius: 0px;
+  width: 100%;
+}
+.HateButton3 {
+  position: relative;
+  left: -174px;
+  font-weight: bold;
+  font-size: 16px; 
+}
+.dsgsgdgsdgsegsdg242 {
+  position: relative;
+  left: -43px;
+  font-size: 15px;
+}
+.dsgsgdgsdgsegsdg2452 {
+  position: relative;
+  left: -52px;
+  font-size: 15px;
+}
+.jbkcsadfilhdioud {
+  position: relative;
+  top: 20px;
+  left: 450px;
+}
+// .dgsegdggdge {
+//   padding: 20px;
+//   border-radius: 10px;
+// }
+.HateButton2 {
+  position: relative;
+  left: -157px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.dsgsgdgsdgsegsdg24 {
+  position: relative;
+  left: -87px;
+  font-size: 15px;
+}
+.dsgsgdgsdgsegsdg245 {
+  position: relative;
+  left: -57px;
+  font-size: 15px;
+}
+.dsgsgdgsdgsegsdg32 {
+  position: relative;
+  left: -10px;
+  font-size: 15px;
+}
+.HateButton {
+  position: relative;
+  left: -220px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.dsgsgdgsdgsegsdg {
+  position: relative;
+  left: -62px;
+  font-size: 15px;
+}
+.dsgsgdgsdgsegsdg2 {
+  position: relative;
+  left: -49px;
+  font-size: 15px;
+}
+.dsgsgdgsdgsegsdg3 {
+  position: relative;
+  left: -155px;
+  font-size: 15px;
+}
+.reportingWhatspanText:hover {
+  border: 2px solid #5dacfa;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.toggleMenu1312 {
+  position: absolute;
+  top: -32px;
+  left: 518px;
+  width: 35px;
+  height: 35px;
+  border-radius: 105px;
+}
+.toggleMenu1312A {
+  position: absolute;
+  top: -33px;
+  left: 355px;
+}
+.dfewgsgegdgsege {
+  border-radius: 0px;
+}
+.fhddfhdrhdfghrh {
+  position: relative;
+  left: 10px;
+}
+.dgsgsegdsgsedges {
+  max-height: 370px;
+}
+.dfgdsgesdgseggsdges {
+  color: rgb(0, 0, 0);
+}
+.dfgdsgesdgseggsdges:hover {
+  background: rgb(229, 229, 229);
+}
+.dfgdsgesdgseggsdges:active {
+  background: rgb(217, 217, 217);
+}
+.fhddfhdrhdffafwghrh2 {
+  border-radius: 0px;
+}
+.dpsiofuhsewiyfdesfuy8o2 {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 3px;
+}
+.toggleMenu1312:hover {
+  background: rgb(246, 246, 246);
+}
+.toggleMenu1312:active {
+  background: rgb(236, 235, 235);
+}
+.csdgrsgdfsggssgeg {
+  border-radius: 100%;
+}
+.Moresarch {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+.borderbox433522 {
+  position: absolute;
+  top: 8px;
+  left: 370px;
+}
+.btnH12P222222235 {
+  position: relative;
+  top: -8px;
+  left: 20px;
+}
+.gdfsgegagagw {
+  border-radius: 10px;
+}
+.gkkpsjgmpekhs {
+  position: relative;
+  top: -6px;
+  left: -130px;
+}
+.BlockReport {
+  display: flex;
+  flex-direction: column;  /* Arrange buttons vertically */
+  gap: 40px;               /* Add 20px space between buttons */
+  margin-bottom: 0px;
+  height: 35px;
+  background: none;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  left: 0px;
+  width: 100%;
+  border-radius: 5px;
+}
+.BlockReportspan {
+  position: relative;
+  top: 6px;
+  left: 40px;
+  color: #4e4e4e;
+}
+.svgBlockReport {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  color: #4e4e4e;
+}
+.svgBlockReport2 {
+  position: absolute;
+  top: 48px;
+  left: 19px;
+  color: #4e4e4e;
+}
+.CommunityInfo {
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+.CommunityInfoDiv2 {
+  position: relative;
+  top: 60px;
+}
+.CommunityInfo2 {
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 65px;
+  left: 15px;
+}
+.CommunityInfoDiv2233 {
+  position: relative;
+  top: 110px;
+}
+.PostImges1 {
+  width: 300px;
+}
+.JoinourcommunityBio22 {
+  position: relative;
+  top: 90px;
+  left: -30px;
+  color: #676767;
+  font-size: 12px;
+}
+.JoinourcommunityBio22Button {
+  position: relative;
+  top: 50px;
+}
+.ModalReportCommunity1233 {
+  position: relative;
+  top: -6px;
+  left: 60px;
+}
+.StatsEmpty13 {
+  position: relative;
+  left: 220px;
+}
+.SubscribeButton12 {
+  background: #c936cc;
+  color: white;
+  border: 1px solid #c936cc;
+}
+.SubscribeButtoUnblockn12 {
+  width: 40px;
+  position: relative;
+  left: -4px;
+}
+.HeroIconEllipsisHorizontalIcon {
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+.ADTweetbookfsafwf {
+  border-left: none;
+  border-right: none;
+}
+.moredbsbesdesb {
+  border-radius: 0px;
+}
+
+.SubscribeButtoUnblockn12svg {
+  position: relative;
+  left: -8px;
+}
+@media (max-width: 600px) {
+  .StatsEmpty13 {
+    display: none;
+  }
+}
+
+.JoinourcommunityBio2 {
+  position: relative;
+  top: 35px;
+  left: -120px;
+  color: #676767;
+  font-size: 16px;
+}
+.classNamekeyDev1415 {
+  position: relative;
+  top: -2px;
+}
+.UserNav123 {
+  position: relative;
+  top: -2px;
+  left: 0.5px;
+}
+.HeroIconsdfagw {
+  position: relative;
+  left: 7px;
+}
+.Posthidden2 {
+  position: relative;
+  top: -9px;
+}
+.buttoncontainer323 {
+  margin-top: -8px;
+  font-size: 12px;
+  color: rgb(81, 81, 81);
+}
+.buttoncontainer32553252353 {
+  margin-top: -8px;
+  font-size: 12px;
+  color: rgb(255, 0, 0);
+}
+.buttoncontainer323331w51552 {
+  margin-top: -10px;
+  font-size: 13px;
+  color: rgb(255, 0, 0);
+}
+.ActionModalButoonmodal {
+  border: 1px solid rgb(222, 222, 222);
+  height: 45px;
+  border-radius: 105px;
+  @media (max-width: 768px) { // Adjust the max-width to target different phone sizes
+    border: 1px solid rgb(222, 222, 222);
+    height: 45px;
+    border-radius: 105px; }
+
+  @media (max-width: 480px) { // For smaller phones
+    border: 1px solid rgb(222, 222, 222);
+    height: 45px;
+    border-radius: 105px; }
+}
+
+.ActionModalButoonmodal:hover {
+  background: rgb(235, 235, 235);
+}
+.ActionModalButoonmodalText {
+  display: flex;          /* Use flexbox for alignment */
+  align-items: center;   /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center;    /* Ensure text alignment is centered */
+  position: relative;
+  top: -3px;
+}
+
+.buttoncontainer3234 {
+  height: 35px;
+}
+.buttoncontainer32333 {
+  margin-top: -10px;
+  font-size: 13px;
+  color: rgb(81, 81, 81);
+}
+.UnfollowFollow {
+  border-radius: 10px 10px 0 0;
+}
+@media (min-width: 1280px) { /* xl breakpoint in Tailwind CSS */
+  .menu-container {
+    z-index: 9999;
+  }
+}
+
+
+.lists-buttond23 {
+  background: #f0f0f0;
+  color: #a6a6a6;
+  width: 400px;
+  position: relative;
+}
+.box-you-Lists {
+  border: 1px solid rgb(238, 238, 238);
+  width: 100%;
+  position: relative;
+  bottom: -400px;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.listYour-button {
+  border: none; /* Gray-300 */
+  border-radius: 0px; /* Rounded-lg */
+  padding: 0.5rem; /* p-2 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  cursor: pointer;
+  width: 100%;
+}
+.listYour-button:hover {
+  background: rgb(243, 243, 243);
+}
+.Yourtex43 {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.WhenYou324 {
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+  height: 100%; /* Make sure to set height to center text vertically within its container */
+  margin-top: 30px;
+color: rgb(103, 103, 103);
+}
+.gourggrgr_Settings {
+  position: relative;
+  top: 56.6px;
+}
+.dpsiofuhsewiyfdesfuy8o {
+  border-radius: 15px 15px 15px 15px;
+  // position: relative;
+  // top: -3px;
+}
+.HeroIconnamespan {
+  font-size: 13px;
+  color: #000000;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.sfuahofpuafwuafw {
+  // border-radius: 0px 0px 15px 15px;
+  border-bottom: none;
+}
+.sfuahofpuafwuafw2 {
+  border-bottom: none;
+}
+.HeroIconnamespan2div {
+  cursor: pointer;
+  border-radius: 8px;
+}
+.HeroIconnamespan3div {
+  position: relative;
+  left: -5px;
+}
+.HeroIconnamespan2 {
+  color: #000000;
+}
+  .custom-buttonhover:hover {
+    background: rgb(240, 240, 240);
+    border: none; /* Border to form the square */
+  }
+  .custom-buttonhover2fawrwr {
+    transition: all 0.2s ease-in-out; /* Smooth transition for all properties over 0.2 seconds */
+    width: 16.5%; /* Button width set to 10% of its container */
+    height: 60px;
+    border-radius: 4px; /* Rounded corners with a radius of 15px */
+    font-family: var(--font-caption); /* Applies the custom font defined in your CSS variables */
+    margin-bottom: 10px; /* 10 pixels spacing below the button */
+    position: fixed; /* Fixes the button position relative to the viewport */
+    bottom: 70px; /* Positions the button 10px from the bottom of the viewport */
+    margin-left: 0px; /* Margin left of 10px */
+    background: none; /* No background color */
+  }
+  .custom-buttonhover2fawrwr:hover {
+    background: #f3f3f3;
+  }
+  .custom-buttonhover2 {
+    transition: all 0.2s ease-in-out; /* Smooth transition for all properties over 0.2 seconds */
+    width: 13%; /* Button width set to 10% of its container */
+    border-radius: 15px; /* Rounded corners with a radius of 15px */
+    font-family: var(--font-caption); /* Applies the custom font defined in your CSS variables */
+    margin-bottom: 10px; /* 10 pixels spacing below the button */
+    position: fixed; /* Fixes the button position relative to the viewport */
+    bottom: 80px; /* Positions the button 10px from the bottom of the viewport */
+    margin-left: 10px; /* Margin left of 10px */
+    background: none; /* No background color */
+    border: 1px solid rgb(239, 239, 239);
+    
+  }
+  .custom-buttonhover2:hover {
+    background: #f3f3f3;
+    border: 1px solid #f3f3f3;
+  }
+  .custom-buttonhover3 {
+    transition: all 0.2s ease-in-out; /* Smooth transition for all properties over 0.2 seconds */
+    width: 13%; /* Button width set to 10% of its container */
+    border-radius: 15px; /* Rounded corners with a radius of 15px */
+    font-family: var(--font-caption); /* Applies the custom font defined in your CSS variables */
+    margin-bottom: 10px; /* 10 pixels spacing below the button */
+    position: fixed; /* Fixes the button position relative to the viewport */
+    bottom: 135px; /* Positions the button 10px from the bottom of the viewport */
+    margin-left: 10px; /* Margin left of 10px */
+    background: none; /* No background color */
+    border: 1px solid rgb(239, 239, 239);
+  }
+  .custom-buttonhover3:hover {
+    background: #f3f3f3;
+    border: 1px solid #f3f3f3;
+  }
+  .InputU {
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 100px;
+    border: 1px solid rgb(230, 230, 230);
+    border-bottom: none;
+  }
+  .studiotext {
+    font-size: 20px;
+  }
+  
+
+  @media (min-width: 768px) {
+    .scrollable-container22 {
+      max-height: 100vh; /* Max height to fill the viewport height */
+      height: 100vh; /* Allow height to adjust based on content */
+      width: 13%; /* Fixed width */
+      border-left: none;
+      border-top: none;
+      border-bottom: none;
+      position: fixed; /* Use fixed positioning to keep it in place */
+      top: 0px; /* Align to the top of the viewport */
+      left: 10px; /* Align to the left of the viewport */
+      overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    }
+  }
+  .custom-button44 {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* equivalent to gap-4 */
+    padding: 0.5rem; /* equivalent to p-2 */
+    font-size: 1.25rem; /* equivalent to text-xl */
+    width: 95%; /* equivalent to w-full */
+    border-radius: 15px; /* equivalent to rounded-[15px] */
+    font-family: var(--font-caption); /* assuming font-caption is a custom font */
+    margin-bottom: 5px; /* 10 pixels spacing between buttons */
+    position: relative; /* Use fixed positioning to keep it in place */
+    top: 30px; /* Align to the top of the viewport */
+    height: 45px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .custom-button43 {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* equivalent to gap-4 */
+    padding: 0.5rem; /* equivalent to p-2 */
+    font-size: 1.25rem; /* equivalent to text-xl */
+    // transition: all 0.2s ease-in-out; /* equivalent to transition-all duration-200 ease-in-out */
+    width: 95%; /* equivalent to w-full */
+    border-radius: 15px; /* equivalent to rounded-[15px] */
+    font-family: var(--font-caption); /* assuming font-caption is a custom font */
+    width: 75%; /* equivalent to w-[84%] */
+    margin-bottom: 5px; /* 10 pixels spacing between buttons */
+    position: relative; /* Use fixed positioning to keep it in place */
+    top: 30px; /* Align to the top of the viewport */
+    height: 43px;
+    height: 50px;
+    border-radius: 0 105px 105px 0px;
+  }
+  .ADTweetbook {
+    border-radius: 15px;
+  }
+  .main-tab80px {
+    border-radius: 100%;
+  }
+  .ADTweetbook2 {
+    border: 1px solid rgb(243, 243, 243);
+  }
+  .custom-button43 {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* equivalent to gap-4 */
+    padding: 0.5rem; /* equivalent to p-2 */
+    font-size: 1.25rem; /* equivalent to text-xl */
+    transition: all 0.2s ease-in-out; /* equivalent to transition-all duration-200 ease-in-out */
+    width: 95%; /* equivalent to w-full */
+    border-radius: 15px; /* equivalent to rounded-[15px] */
+    font-family: var(--font-caption); /* assuming font-caption is a custom font */
+    width: 95%; /* equivalent to w-[84%] */
+    margin-bottom: 5px; /* 10 pixels spacing between buttons */
+    position: relative; /* Use fixed positioning to keep it in place */
+    top: 30px; /* Align to the top of the viewport */
+    height: 43px;
+    height: 50px;
+  }
+  .VEveryone {
+    box-shadow: none;
+    border: 1px solid rgb(235, 235, 235);
+  }
+  .buttonLeft2{ 
+    position: relative;
+    top: 16px;
+    height: 50px;
+    left: -16px;
+  }
+  .buttonLeft23 {
+    position: relative;
+    top: 16px;
+    height: 50px;
+    left: -16px;
+  }
+  .createhashtagBtn {
+    font-weight: bold;
+  }
+  .createhashtaginput {
+    background: none;
+    width: 100%;
+    border: 1px solid rgb(208, 208, 208);
+    outline: none;
+    height: 40px;
+    border-radius: 105px;
+  }
+  .createhashtaginput::placeholder {
+    color: gray; /* Example color */
+    font-size: 14px; /* Example font size */
+    position: relative;
+    left: 20px;
+  }
+  .createhashtagbtnw {
+    position: relative;
+    top: 10px;
+    background: none;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: white;
+    outline: none;
+    height: 40px;
+    border-radius: 105px;
+    display: flex;            /* Use flexbox */
+    align-items: center;      /* Center items vertically */
+    justify-content: center;  /* Center items horizontally */
+    padding: 0 15px;          /* Optional: add padding if needed */
+    box-sizing: border-box;   /* Ensure padding and border are included in width/height */
+  }
+  .createhashtagbtnw:hover {
+    border: none;
+    background: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+  }
+  .createhashtaginputdiv {
+    border: 1px solid rgb(103, 103, 103);
+    height:110px;
+    border-radius: 0px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .ReportOther24 {
+    border-radius: 0px;
+  }
+  .hashtags-container {
+    max-height: 200px;
+    height: 200px;
+    overflow-y: auto; /* Adds vertical scrolling if content exceeds max height */
+    border: none; /* Optional: Adds a border around the container */
+    padding: 0.5rem; /* Optional: Adds padding inside the container */
+    border-radius: 8px; /* Optional: Rounds the corners of the container */
+  }
+  /* For Webkit-based browsers (Chrome, Safari) */
+.hashtags-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.hashtags-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 8px; /* Rounds the corners of the scrollbar track */
+}
+.TweetbookStudio {
+  position: fixed;
+  top: 280px;
+  left: 20px;
+  border-radius: 8px;
+  color: #707070;
+  font-size: 20px;
+  width: 300px;
+}
+.TweetbookStudi2o {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  border-radius: 8px;
+  color: #707070;
+  font-size: 20px;
+  width: 300px;
+}
+.TweetbookStudi2o3 {
+  position: fixed;
+  top: 160px;
+  left: 20px;
+  border-radius: 8px;
+  color: #707070;
+  font-size: 20px;
+  width: 300px;
+}
+.TweetbookStudi2o4 {
+  position: fixed;
+  top: 220px;
+  left: 20px;
+  border-radius: 8px;
+  color: #707070;
+  font-size: 20px;
+  width: 300px;
+}
+.TweetbookStudi2o42  {
+  position: fixed; /* Keeps the element fixed in place */
+  top: 30px;       /* Distance from the top of the viewport */
+  left: 50%;       /* Center the element horizontally */
+  transform: translateX(-50%); /* Adjust positioning to center the element */
+  width: 78vw;     /* Width relative to viewport width */
+  height: 90vh;    /* Height relative to viewport height */
+  max-width: 1200px; /* Optional: limit maximum width to prevent it from getting too large */
+  max-height: 90vh; /* Optional: limit maximum height to prevent it from getting too large */
+  overflow: auto;  /* Add scrolling if content overflows */
+  border-radius: 8px; /* Optional: rounded corners */
+  padding: 16px; /* Optional: padding inside the element */
+}
+
+.hashtags-container::-webkit-scrollbar-thumb {
+  background: #efefef; /* Color of the scrollbar thumb */
+  border-radius: 8px; /* Rounds the corners of the scrollbar thumb */
+}
+
+.hashtags-container::-webkit-scrollbar-thumb:hover {
+  background: #e1e1e1; /* Color of the scrollbar thumb when hovered */
+}
+
+  .chatgptBotTweetbook {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* 20 pixels from the bottom of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjusts for the width of the element */
+    width: 35%; /* Adjust width as needed */
+    height: 50px;
+    padding: 10px; /* Padding inside the input */
+    border-radius: 105px; /* Rounded corners */
+    border: none; /* No border */
+    box-shadow: none; /* No shadow */
+    font-size: 16px; /* Font size for readability */
+    line-height: 1.5; /* Spacing between lines of text */
+    outline: none;
+    background: rgb(240, 240, 240); /* Background color */
+    /* Adjust the padding to make space for placeholder */
+    padding-left: 30px; /* Space from the left edge for the placeholder text */
+    color: #8d8d8d;
+  }
+  .send123png {
+    width: 25px;
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 30px; /* 20 pixels from the bottom of the page */
+    left: 65.4%; /* Center horizontally */
+  }
+  /* Correct placement of placeholder styling */
+  .chatgptBotTweetbook::placeholder {
+    color: #8d8d8d; /* Gray color for placeholder text */
+    position: absolute; /* Allows for positioning relative to the input */
+    left: 40px; /* 20 pixels from the left edge of the input */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+  }
+  @media (max-width: 600px) {
+    .button1234 {
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      position: fixed;
+      bottom: 340px;
+       left: 0px;
+      transform: translateX(-50%); /* Adjusts to be centered */
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: center; /* Centers vertically */
+      color: #6ed6ff;
+    }
+}
+
+.button1234 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 28px;
+  margin-left: 66%;
+  transform: translateX(-50%); /* Adjusts to be centered */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  color: #5c5c5c;
+}
+.button1234:hover {
+  width: 35px;
+  height: 35px;  
+  background: #e1e1e1;
+  color: rgb(0, 0, 0);
+}
+.chat-window {
+  position: relative;
+  top: 20%;
+  width: 100%;
+}
+
+.error424 {
+  position: relative;
+  top: 100px;
+  margin-left: 27%;
+  background: rgb(240, 240, 240); /* Background color */
+  border-radius: 25px;
+  width: 400px;
+  max-width: 400px;
+  height: 40px;
+  max-height: 40px;
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text alignment */
+}
+
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  position: fixed;
+  top: 180px; /* Center vertically */
+  margin-left: 37%;
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  border: 4px solid #f3f3f3; /* Light grey background */
+  border-top: 4px solid #3498db; /* Blue color for spinner */
+  border-radius: 50%;
+  width: 30px; /* Size of the spinner */
+  height: 30px; /* Size of the spinner */
+  animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  .chatgptBotTweetbook {
+    animation: blink 1s step-start infinite; /* Apply blinking effect */
+  }
+  
+  .displyrr {
+    position: relative;
+    top: 50px;
+  }
+  .boxExplore {
+    max-height: 400px; /* Adjust the height as needed */
+    width: 250px; /* Adjust the width as needed */
+    border: 1px solid #e7e7e7; /* Border to form the square */
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin-top: -10px;
+    margin-left: 22px;
+    border-radius: 0px 0 0  00px ; /* No border-radius on the left side */
+    padding: 16px; /* Padding inside the container */
+    background-color: none; /* Background color for the container */
+    box-shadow: none; /* Subtle shadow */
+    position: relative; /* Required for the pseudo-element positioning */
+    top: -320px;
+  }
+  /* Custom scrollbar styles for desktop */
+  .scrollable-container::-webkit-scrollbar {
+    width: 2px; /* Width of the scrollbar */
+    cursor: pointer;
+  }
+
+  .scrollable-container::-webkit-scrollbar-track {
+    background: none; /* Track color */
+    border-radius: 8px; /* Optional: rounded corners for the track */
+  }
+
+  .scrollable-container::-webkit-scrollbar-thumb {
+    background: none; /* Thumb color (white) */
+    border-radius: 8px; /* Optional: rounded corners for the thumb */
+  }
+
+  .scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: none; /* Thumb color when hovered */
+  }
+.linkName424 {
+  background: none;
+  position: relative;
+  top: -103px;
+  margin-left: 22px;
+  height: 300px;
+}
+
+  /* Styles for the links inside the container for desktop */
+  .scrollable-container nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 4px 0;
+    text-decoration: none;
+    color: #969696; /* Text color */
+    background-color: none; /* Background color for the links */
+    border-radius: 4px; /* Rounded corners for the links */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+}
+.TweetButton {
+  background-color: #5bc1fc; /* Replace with the actual color used for bg-main-accent */
+  color: #f7f7f7; /* Text color */
+  font-size: 1.125rem; /* 18px for text-lg */
+  font-weight: 700; /* Font-bold */
+  outline: none;
+  transition: background-color 0.3s, filter 0.3s;
+  width: 100%; /* Full width on mobile */
+  position: relative;
+  border-radius: 0px;
+  border: 1px solid rgb(208, 235, 255);
+  border-left: none;
+  border-right: none;
+}
+
+.TweetButton:hover {
+  filter: brightness(0.9); /* Hover brightness */
+  background-color: #35a3f7; /* Slightly darker background color on hover */
+  color: #ffffff; /* Text color remains the same */
+}
+
+.TweetButton:active {
+  filter: brightness(0.75); /* Active brightness */
+}
+
+/* Desktop Styles */
+@media (min-width: 640px) { /* Desktop viewport */
+  .TweetButton {
+    width: 97.8%; /* Equivalent to xl:w-11/12 */
+    position: relative;
+    border-radius: 0px 0 0  0px ; /* No border-radius on the left side */
+    margin-top: -1080px;
+    margin-left: 23.3px;
+    bottom: 10px; /* Adjust this value as needed */
+  }
+}
+.TweetbookExplore {
+  background-color: none; /* Replace with the actual color used for bg-main-accent */
+  color: #000000; /* Text color */
+  font-size: 1.125rem; /* 18px for text-lg */
+  font-weight: 700; /* Font-bold */
+  outline: none;
+  transition: background-color 0.3s, filter 0.3s;
+  border-radius: 105px; /* Rounded-none */
+  width: 100%; /* Full width on mobile */
+  position: relative;
+  height: 40px;
+  cursor: pointer;
+  display: none; /* Hide by default */
+}
+
+.TweetbookExplore:hover {
+  background: rgb(213, 213, 213);
+}
+.InputisMobile {
+  position: relative;
+  top: 50px;
+}
+.InputisMobile2 {
+  position: relative;
+  top: 60px;
+}
+// .modal-content {
+//   background: #fff;
+//   border-radius: 8px;
+//   position: relative;
+//   width: 400px;
+//   height: 400px;
+//   padding: 20px;
+//   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// }
+
+// .modal-close {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   background: transparent;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// .modal-close:hover {
+//   color: #000;
+// }
+/* Desktop Styles */
+@media (min-width: 640px) { /* Desktop viewport */
+  .TweetbookExplore {
+    display: block; /* Show on desktop */
+    border-left: none;
+    border-top: none;
+    width: 230px; /* Equivalent to xl:w-11/12 */
+    border-radius:105px; /* No border-radius on the left side */
+    margin-top: 6px;
+    margin-left: -6px;
+    text-align: center;
+    bottom: 10px; /* Adjust this value as needed */
+  }
+}
+.Moreoptions3 {
+  text-align: center;
+  color: rgb(208, 208, 208);
+}
+.from315 {
+  position: relative;
+  top: 5px;
+}
+.scrollable-container323 {
+    width: 400px;
+    height: 400px;
+}
+.TweetbookExplore2 {
+  display: block; /* Show on desktop */
+  border-left: none;
+  border-top: none;
+  width: auto; /* Equivalent to xl:w-11/12 */
+  border-radius: 0px 0 0 0px; /* No border-radius on the left side */
+  margin-top: 10px;
+  margin-left: 0px;
+  text-align: center;
+  font: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  bottom: 10px; /* Adjust this value as needed */
+}
+.Close3424 {
+  background: none;
+  width: 350px;
+  height: 40px;
+  position: absolute;
+  top: 345px;
+  left: 26px;
+  border-radius: 105px;
+  border: 1px solid rgb(200, 200, 200);
+}
+.Close3424:hover {
+  background: rgb(231, 231, 231);
+}
+.Close3424:hover {
+  background-color: rgb(241, 241, 241); /* Change background on hover */
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.Close3424:active {
+  transform: scale(0.98); /* Slightly scale down on click */
+}
+.navlinklkel123 {
+  text-align: center; /* Center-aligns text and inline elements */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  height: 100%; /* Ensures it takes full height if necessary */
+  position: relative;
+  top: -150px;
+  border: 1px solid rgb(201, 201, 201);
+  border-top:none; 
+  border-right:none; 
+  border-left:none; 
+}
+
+@layer components {
+  .hover-animation {
+    @apply transition-colors duration-200;
+  }
+  .custom-button2 {
+    @apply hover-animation rounded-full p-3 disabled:cursor-not-allowed disabled:opacity-50;
+    border-radius: 10px;
+  }
+  .custom-button {
+    @apply hover-animation rounded-full p-3 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  
+/* styles/sidebar.css */
+.sidebar-icon {
+  margin-right: 0.75rem; /* Space between icon and text */
+}
+
+.sidebar-text {
+  flex: 1; /* Make the text take the remaining space */
+}
+
+  
+  .custom-underline {
+    @apply hover-animation underline decoration-transparent outline-none transition [text-decoration-thickness:1px] 
+           hover:decoration-inherit focus-visible:decoration-inherit;
+  }
+
+  .main-tab {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-[#878a8c] focus-visible:transition-shadow 
+           focus-visible:duration-200 dark:focus-visible:ring-white;
+  }
+
+  .accent-tab {
+    @apply main-tab #{'focus-visible:!ring-main-accent/80'};
+  }
+
+  .accent-bg-tab {
+    @apply focus-visible:bg-main-accent/10;
+  }
+
+  .dark-bg-tab {
+    @apply focus-visible:bg-light-primary/10 dark:focus-visible:bg-dark-primary/10;
+  }
+
+  .blur-picture {
+    @apply hover-animation accent-tab rounded-full transition hover:brightness-75 active:brightness-100;
+  }
+
+  .trim-alt {
+    @apply overflow-hidden text-ellipsis break-all [display:-webkit-box] [-webkit-line-clamp:1] [-webkit-box-orient:vertical];
+  }
+
+  .hover-card {
+    @apply hover:bg-black/[0.03] focus-visible:bg-black/[0.03] dark:hover:bg-white/[0.03]
+           dark:focus-visible:bg-white/[0.03];
+  }
+
+  .menu-container {
+    @apply z-10 rounded-md bg-main-background outline-none 
+           [box-shadow:#65778633_0px_0px_15px,_#65778626_0px_0px_3px_1px] 
+           dark:[box-shadow:#ffffff33_0px_0px_15px,_#ffffff26_0px_0px_3px_1px];
+  }
+}
+/* CSS for For You button */
+.positionf2 {
+  position: relative;
+  border: 1px solid rgb(216, 216, 216);
+  width: 200px;
+  height: 40px;
+  margin-left: 50px; /* Adjusted for spacing between buttons */
+}
+
+.positionf2:hover {
+  background: white;
+}
+
+.positionf2.active {
+  border-bottom: 3px solid blue;
+}
+
+/* CSS for Following button */
+.positionf {
+  position: relative;
+  border: 1px solid rgb(216, 216, 216);
+  width: 230px;
+  left: 260px;
+  height: 40px;
+  margin-top: -40px; /* Adjusted for spacing between buttons */
+  margin-left: 270px; /* Adjusted for spacing between buttons */
+}
+
+.positionf:hover {
+  background: white;
+}
+
+.positionf.active {
+  border-bottom: 3px solid blue;
+}
+
+
+
+
+
+/* CSS for For You button */
+.positionf2 {
+  position: relative;
+  border-top: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid rgb(216, 216, 216);
+  width: 220px;
+  height: 40px;
+  margin-left: 40px; /* Adjusted for spacing between buttons */
+}
+
+.positionf2:hover {
+  background: rgb(224, 224, 224);
+}
+
+.positionf2.active {
+  border-bottom: 3px solid rgb(0, 157, 255);
+}
+
+/* CSS for Following button */
+.positionf {
+  position: relative;
+  border-top: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid rgb(216, 216, 216);
+  width: 220px;
+  height: 40px;
+  margin-left: -1px; /* No spacing between the buttons */
+}
+
+.positionf:hover {
+  background: rgb(224, 224, 224);
+}
+.positionf.active {
+  border-bottom: 3px solid rgb(0, 157, 255);
+}
+.Font-edit {
+  font-family: system-ui;
+  font-size: 18px;
+  margin-top: -3px;
+}
+.gesgsgdgsgdsgseg {
+  position: relative;
+  left: 13px;
+  border-radius: 8px;
+  width: 95%;
+  height: 35px;
+}
+.NextclassNamespan {
+  position: relative;
+  top: -3px;
+}
+.dgsgsghshshdgshe {
+  position: absolute;
+  top: 200px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.app-Essay-class2 {
+  width: 500px;
+  height: 400px;
+  background-color: none; /* Twitter white background */
+  border: none; /* Twitter blue border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: none; /* Soft shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-Essay-class {
+  width: 500px;
+  height: 400px;
+  background-color: none; /* Twitter white background */
+  border: none; /* Twitter blue border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 64px rgba(113, 113, 113, 0.1); /* Soft shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-essay-class:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 6px 88px 6px rgba(92, 92, 92, 0.2); /* More pronounced shadow on hover */
+}
+
+.box4 {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .object-cover {
+//   width: 500px;
+//   height: 400px;
+//   background-color: #ffffff; /* Twitter white background */
+//   border: 1px solid #ff0000; /* Twitter blue border */
+//   border-radius: 12px; /* Rounded corners */
+//   box-shadow: 0 4px 64px rgba(255, 0, 0, 0.1); /* Soft shadow */
+//   transition: transform 0.2s ease-in-out; /* Smooth scaling */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.tweetbook-img {
+  background-color: #ffffff; /* Twitter white background */
+  border: 1px solid #f0f0f0; /* Twitter blue border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 32px 32px 32px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Disable mouse events */
+}
+
+.Tweetbook-tag {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Example font stack */
+  font-size: 54px; /* Example font size */
+  font-weight: bold; /* Example font weight */
+  color: #dbdada; /* White text color */
+  background-color: none; /* Twitter blue background */
+  padding: 100px 100px; /* Padding around text */
+  border-radius: 4px; /* Rounded corners */
+  display: inline-block; /* Display as inline-block for inline usage */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Letter spacing for emphasis */
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* Smooth background color and scale transition */
+  /* Hover effect */
+}
+
+.Tweetbook-tag:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  background-color: #f8f8f8; /* Darker blue background on hover */
+  cursor: pointer;
+  color: #e4e4e4;
+}
+.Close-btn {
+  margin-top: 4px;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.Close-btn:hover {
+  background-color: #333;
+}
+// .p-text-t {
+//   color: #1da1f2; /* Twitter blue */
+//   font-weight: bold; /* Ensure text is bold */
+//   animation: rotateText 3s linear infinite; /* Animation for rotation */
+// }
+
+// @keyframes rotateText {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg); 
+//   }
+// }
+
+/* Define styles for light mode */
+.box2 {
+  padding: 1rem; /* Tailwind's p-4 is 1rem (16px) padding */
+  background-color: white;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-md */
+  max-width: 574px;
+  width: 574px;
+}
+
+/* Define styles for dark mode */
+@media (prefers-color-scheme: dark) {
+  .box2 {
+    background-color: #2d3748; /* Tailwind's dark:bg-gray-800 */
+  }
+}
+.btn4 {
+  position: relative;
+  top: 37px;
+  left: 100px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 500px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.btn4:hover {
+  transform: scale(1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn4:hover .icon {
+  transform: translate(4px);
+}
+
+.btn4:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.btn4::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(0, 123, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+.text3 {
+  font-size: 0.7rem; /* Tailwind's text-lg */
+  font-weight: inherit; /* Tailwind's font-bold */
+  margin-bottom: 1rem; /* Tailwind's mb-4 */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Similar to Twitter's font */
+}
+/* Add this to your CSS file */
+.box-create {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+/* Add this to your CSS file */
+.boxpp {
+  background-color: white;
+  padding: 1rem; /* 4 * 0.25rem */
+  border-radius: 0.5rem; /* rounded-lg */
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.btn42 {
+  position: relative;
+  top: 249px;
+  left: 280px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 500px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+.btn42:hover {
+  transform: scale(1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.btn42:hover .icon {
+  transform: translate(4px);
+}
+.btn42:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+/* Add this to your CSS file */
+.input-t2 {
+  padding: 0.5rem; /* 2 * 0.25rem */
+  flex: 1;
+  border-radius: 0.375rem; /* rounded-md */
+  margin-right: 0.5rem; /* 2 * 0.25rem */
+  width: 270px;
+  border-radius: 9999px;
+  position: relative;
+  top: 288px;
+  left: 0px;
+  border: none; /* border border-gray-300 */
+  background-color: rgb(241, 241, 241);
+  border-radius: 100px; /* rounded-md */
+  margin-right: 0.5rem; /* mr-2 */
+  outline: none; /* focus:outline-none */
+
+  /* Focus state */
+  &:focus {
+    background-color: rgb(241, 241, 241); /* Lighter background color when focused */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add a subtle blue shadow on focus for better visibility */
+    border: none;
+    // border: 1px solid black;
+  }
+}
+/* Define the styles for the input-t55 class */
+.input-t55 {
+  flex: 1;
+  position: relative;
+  top: 300px;
+  left: 0px;
+  border-radius: 100px; /* Fully rounded border-radius */
+  margin-right: 0.5rem; /* Margin to the right */
+  border: none; /* No border */
+  background-color: rgb(241, 241, 241); /* Light background color */
+  outline: none; /* Remove default outline */
+  padding: 0 1rem; /* Add some padding inside the input for better spacing */
+
+}
+
+/* Focus state */
+.input-t55:focus {
+  background-color: rgb(241, 241, 241); /* Keep the same background color when focused */
+  border: none; /* No border when focused */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add a subtle blue shadow on focus for better visibility */
+}
+
+/* Placeholder styling */
+.input-t55::placeholder {
+  color: #000000; /* Black color for placeholder text */
+  text-align: center; /* Center-align placeholder text inside the input */
+}
+
+
+
+.box-dsdd {
+  border: 1px solid rgb(195, 195, 195);
+  display: flex;
+}
+.csopbtn {
+  position: relative;
+  top: 300px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 500px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+.csopbtn:hover {
+  transform: scale(1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.csopbtn:hover .icon {
+  transform: translate(4px);
+}
+.csopbtn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+.bobob {
+  background-color: #ffffff; /* bg-white */
+  padding: 1rem; /* p-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  width: 500px; /* w-500 */
+  height: 500px;
+  position: relative; /* relative */
+}
+.input-ss {
+  position: relative;
+  top: 300px;
+  border: 1px solid #e5e7eb; /* border */
+  padding: 0.5rem; /* p-2 */
+  flex: 1; /* flex-1 */
+  border-radius: 0.375rem; /* rounded-md */
+  margin-right: 0.5rem; /* mr-2 */
+  border-radius: 9999px;
+}
+.input-search-1 {
+  padding: 0.75rem 1rem; /* px-3 py-2 */
+  border: none; /* border border-gray-300 */
+  background-color: none;
+  border: 1px solid rgb(237, 237, 237);
+  max-width: 450px;
+  width: 450px;
+  height: 45px;
+  border-radius: 100px; /* rounded-md */
+  margin-right: 0.5rem; /* mr-2 */
+  outline: none; /* focus:outline-none */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover and active states */
+}
+
+/* Hover state */
+.input-search-1:hover {
+  background-color: #f5faff; /* Change background on hover */
+  border-color: #d3e2f5; /* Change border color on hover */
+  cursor: pointer;
+}
+
+/* Active state (when clicked) */
+.input-search-1:active {
+  background-color: #e0ecff; /* Change background color when clicked */
+  border-color: #a3c2ff; /* Change border color when clicked */
+}
+
+/* Focus state */
+.input-search-1:focus {
+  background-color: none; /* No change when focused */
+  border-color: #a3c2ff; /* Optionally change border color when focused */
+}
+.username24 {
+  position: relative;
+  top: 5px;
+}
+.username242 {
+  position: relative;
+  top: 5px;
+}
+// .input-search-12 {
+//   padding: 0.75rem 1rem; /* px-3 py-2 */
+//   position: absolute;
+//   top: 15px;
+//   border: none; /* border border-gray-300 */
+//   background-color: rgb(241, 241, 241);
+//   box-shadow: 0 7px 62px 6px rgb(197, 197, 197);
+//   max-width: 400px;
+//   height: 45px;
+//   width: 400px;
+//   border-radius: 100px; /* rounded-md */
+//   margin-right: 0.5rem; /* mr-2 */
+//   outline: none; /* focus:outline-none */
+
+//   /* Focus state */
+//   &:focus {
+//     background-color: rgb(241, 241, 241); /* Lighter background color when focused */
+//     border: none;
+//     // border: 1px solid black;
+//   }
+// }
+.boxSipinput {
+  border: 1px solid rgb(237, 237, 237);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+}
+.input-search-1:focus {
+  border: 1px solid rgb(237, 237, 237);
+}
+.btn-clik-2 {
+  padding: 0.75rem 1rem; /* px-3 py-2 */
+  border: 1px solid rgb(237, 237, 237);
+  background-color: none;
+  max-width: 100px;
+  width: 450px;
+  border-radius: 100px; /* rounded-md */
+  margin-right: 0.5rem; /* mr-2 */
+  outline: none; /* focus:outline-none */
+  color: #8c8c8c;
+  &:focus {
+    background-color: none; /* Additional shade for focus state */
+    border: 1px solid rgb(237, 237, 237);
+    // border: 1px solid #51a4f6;
+  }
+}
+.Showmore2 {
+  width: 350px;
+  max-width: 550px;
+}
+.btn-clik-23 {
+  padding: 0.75rem 1rem; /* px-3 py-2 */
+  border: none; /* border border-gray-300 */
+  background-color: rgb(241, 241, 241);
+  max-width: 450px;
+  width: 450px;
+  border-radius: 100px; /* rounded-md */
+  margin-right: 0.5rem; /* mr-2 */
+  outline: none; /* focus:outline-none */
+  color: #8c8c8c;
+}
+.span-pop {
+  color: #51a4f6; /* text-gray-600 */
+  background-color: #d1d5db;
+  max-width: 475px;
+  width: 100%; /* Ensures it takes full width on smaller screens */
+  font-size: 12px;
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    max-width: 100%; /* Adjust as needed for responsiveness */
+  }
+}
+
+.font-fast3 {
+  font-size: 11px;
+}
+.pppop2 {
+  font-size: 11px;
+  color: #51a4f6;
+  cursor: pointer;
+}
+.pppop {
+  font-size: 11px;
+}
+.boxepro {
+  padding: 0.75rem 1rem; /* px-3 py-2 */
+  border: none; /* border border-gray-300 */
+  background-color: rgb(241, 241, 241);
+  border-radius: 100px; /* rounded-md */
+  margin-right: 0.5rem; /* mr-2 */
+  height: 50px;
+  max-width: 170px;
+  width: 200px;
+  position: relative;
+  top: 50px;
+  left: -20px;
+}
+// Sets the position of that thing that looks like a download in posts
+// .vovovtweet {
+//   position: fixed;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   white-space: nowrap;
+//   color: var(--text-light-primary); /* Replace with actual color value if needed */
+//   z-index: 50;
+//   background: rgb(224, 224, 224);
+// }
+
+// .dark .vovovtweet {
+//   color: var(--text-dark-primary); /* Replace with actual color value if needed */
+// }
+// End of file End of file End of file End of file
+.btn-Follow {
+  align-self: start;
+  border: 2px solid #f3f4f6; /* Replace with your specific border color */
+  background-color: #000000; /* Replace with your specific background color */
+  padding: 8px 16px; /* Adjust padding as needed */
+  font-weight: bold;
+  color: #ffffff; /* Replace with your specific text color */
+  height: 40px;
+}
+.peoplefriendfollowText {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Adjust the space between buttons */
+  font-size: 12px;
+  color: #696969;
+}
+
+.accent-tabPost {
+  position: relative;
+  top: 55px;
+  left: 0px;
+  background: none;
+  color: black;
+  border-radius: 0 105px 105px 0px;
+}
+.accent-tabPost:hover {
+  background: #c09bfc;
+}
+.divpeoplefriendfollowText {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.peoplefriendfollowText span {
+  /* Add any additional styling for the buttons here */
+  padding: 10px 20px; /* Example padding */
+  border: 1px solid #ccc; /* Example border */
+  background-color: #f0f0f0; /* Example background color */
+  border-radius: 4px; /* Example border radius */
+  cursor: pointer;
+}
+
+.peoplefriendfollowText span:hover {
+  background-color: #e0e0e0; /* Example hover effect */
+}
+
+.btn-Follow:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Hover background color with opacity */
+}
+
+.btn-Follow:focus-visible {
+  background-color: rgba(0, 0, 0, 0.9); /* Focus visible background color with opacity */
+}
+
+.btn-Follow:active {
+  background-color: rgba(0, 0, 0, 0.75); /* Active background color with opacity */
+}
+
+.dark .btn-Follow {
+  background-color: #000000; /* Replace with your specific dark mode background color */
+  color: #ffffff; /* Replace with your specific dark mode text color */
+}
+
+.dark .btn-Follow:hover {
+  background-color: rgba(243, 244, 246, 0.9); /* Dark mode hover background color with opacity */
+}
+
+.dark .btn-Follow:focus-visible {
+  background-color: rgba(243, 244, 246, 0.9); /* Dark mode focus visible background color with opacity */
+}
+
+.dark .btn-Follow:active {
+  background-color: rgba(243, 244, 246, 0.75); /* Dark mode active background color with opacity */
+}
+
+
+
+.btn-Follow {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 100px;
+}
+
+.btn-Follow:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn-Follow:active {
+  color: #000
+}
+
+.btn-Follow:active:after {
+  background: transparent;
+}
+
+.btn-Follow:hover:before {
+  opacity: 1;
+}
+
+.btn-Follow:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+
+@keyframes btn-Follow {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+// End of file End of file End of file End of file Follow btn
+.tag-p {
+  text-align: center;
+  color: #7b8794; /* This is a gray color (#7b8794) */
+  font-size: 20px; /* Adjust as needed for text-xlt */
+  position: absolute;
+  top: 300px;
+  margin-left: -550px;
+}
+.blankpage {
+  margin-top: 300px;
+  margin-left: 100px;
+  font-size:20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ddddd {
+  color: #ff0000;
+}
+.appsFollow {
+  padding: 0.75rem 1rem; /* px-3 py-2 */
+  border: none; /* border border-gray-300 */
+  background-color: none;
+  max-width: 350px;
+  width: 450px;
+    border-radius: 10px 10px 0 0; /* top rounded, bottom straight */
+  
+  margin-right: 0.5rem; /* mr-2 */
+  outline: none; /* focus:outline-none */
+  color: #8c8c8c;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(243, 243, 243); /* Additional shade for focus state */
+    border: none;
+    // border: 1px solid #51a4f6;
+  }
+}
+/* CSS for the TweetAnalyticsButton component */
+.TweetAnalyticsButton {
+  /* Your existing styles */
+}
+
+/* CSS for the Analytics Modal */
+.analytics-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 60px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Adjust as needed */
+  padding: 20px;
+}
+.RequestaCommunityText {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  font-size: 25px;
+  font-weight: bold;
+}
+.SpeakerXMarkIcon {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.SpeakerXMarkIconText2 {
+  position: relative;
+  top: -21px;
+  margin-left: 75px;
+  font-size: 15px;
+}
+.SpeakerXMarkIconText23 {
+  position: relative;
+  top: -21px;
+  margin-left: 75px;
+  font-size: 15px;
+}
+.RequestaCommunityText24 {
+  font-size: 12px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  font-weight: bold;
+  color: #838383;
+}
+.RequestaCommunitybutton24 {
+  position: relative;
+  top: 80px;
+  left: 85px;
+  width: 400px;
+  height: 50px;
+  border-radius: 105px;
+  background: #000;
+  font-weight: bold;
+  color: white;
+}
+/* Modal container that covers the entire screen */
+.error-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Content of the modal */
+.error-modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title of the modal */
+.error-modal-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ff0000; /* Red color to indicate an error */
+}
+
+/* Message inside the modal */
+.error-modal-content p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Close button */
+.error-modal-content button {
+  background-color: #000000; /* Red button */
+  color: white;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 105px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.error-modal-content button:hover {
+  background-color: #272727; /* Darker red on hover */
+}
+
+.RequestaCommunityText2 {
+  position: relative;
+  left: 20px;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  font-size: 12px;
+}
+.analytics-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+/* Styles for computer view */
+.analytics-modal {
+  background-color: none;
+  border-radius: 30px;
+  position: relative;
+  top: 13%;
+  left: 14%;
+  max-width: 600px;
+  width: 600px;
+  height: 300px;
+  text-align: center;
+}
+
+
+/* Styles for phone view */
+@media (max-width: 600px) {
+  .analytics-modal {
+    background-color: none;
+    border-radius: 8px;
+    position: relative;
+    top: 15%;
+    left: 185px; /* Adjusted left for mobile */
+    max-width: 90%; /* Ensure it fits within the viewport */
+    width: 100%; /* Make it responsive */
+    height: auto; /* Allow height to adjust based on content */
+    box-shadow: 0 0px 39px 0px rgb(152, 151, 151);
+    text-align: center;
+  }
+}
+
+
+.analytics-modal-close {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 28px;
+  color: #333333;
+  width: 40px; /* Ensuring a consistent width */
+  height: 40px; /* Ensuring a consistent height */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centering the content */
+}
+
+.analytics-modal-close:hover {
+  background-color: rgba(203, 203, 203, 0.7); /* Transparent gray background */
+  color: #333333;
+  border-radius: 50%;
+}
+
+.analytics-modal-close:hover {
+  color: #000000;
+}
+
+.analytics-modal-content {
+  margin-top: 20px;
+}
+
+.analytics-view-count {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styles for computer view */
+.analytics-view-count-label {
+  position: relative;
+  right: 170px;
+  top: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Styles for phone view */
+@media (max-width: 600px) {
+  .analytics-view-count-label {
+    position: static; /* Reset position for mobile view */
+    font-size: 16px;
+    color: #333333;
+  }
+}
+
+
+.analytics-view-count-number {
+  font-size: 24px;
+  color: #000000;
+}
+
+.analytics-modal-description {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.analytics-modal-dismiss {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 10px 20px;
+  max-width: 500px;
+  width: 500px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .analytics-modal-dismiss {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    padding: 10px 20px;
+    max-width: 340px;
+    width: 500px;
+    cursor: pointer;
+  }
+}
+.analytics-modal-dismiss:hover {
+  background-color: #333333;
+}
+
+
+
+
+
+
+/* Global Styles */
+
+.toggle-checkbox {
+  width: 24px;
+  height: 24px;
+  background-color: #ddd;
+  border-radius: 12px;
+  position: relative;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.toggle-checkbox:checked {
+  background-color: #4f46e5;
+}
+
+.toggle-checkbox:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.toggle-checkbox:checked:before {
+  transform: translateX(24px);
+}
+
+/* Modal styles */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Button styles */
+.bg-light-primary {
+  background-color: #000000; /* Light primary color */
+}
+
+.bg-dark-primary {
+  background-color: #000000; /* Dark primary color */
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.bg-accent-blue {
+  background-color: #000000; /* Accent blue */
+}
+
+.text-accent-blue {
+  color: #000000; /* Accent blue */
+}
+
+/* Add more styles as needed */
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #F5F8FA; /* Twitter Light Gray */
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #FFFFFF; /* White */
+  border-bottom: 1px solid #E1E8ED;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .title {
+  flex: 1;
+  font-size: 24px;
+  font-weight: bold;
+  color: #14171A; /* Twitter Dark Text */
+}
+
+.main-header .settings-button {
+  background-color: #000000; /* Twitter Blue */
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.settings-button:hover {
+  background-color: #e7e7e7;
+}
+
+
+.settings-icon {
+  height: 20px;
+  width: 24px;
+}
+
+/* Main Content Layout */
+.trends-content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.trends-aside {
+  flex: 1;
+  padding: 16px;
+  background-color: #F5F8FA; /* Twitter Light Gray */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trends-main {
+  flex: 3;
+  padding: 16px;
+  background-color: #FFFFFF; /* White */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.definition-button, .save-button, .report-button {
+  background-color: #000000; /* Twitter Blue */
+  color: white;
+  padding: 12px;
+  border-radius: 100px;
+  width: 400px;
+  font-size: 13px;
+  font-weight: unset;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.definition-button:hover, .save-button:hover, .report-button:hover {
+  background-color: rgb(28, 28, 28);
+}
+/* Styles for phone view */
+@media (max-width: 600px) {
+  .definition-button, .save-button, .report-button {
+    background-color: #000000; /* Twitter Blue */
+    color: white;
+    padding: 12px;
+    border-radius: 100px;
+    width: 300px;
+    font-size: 13px;
+    font-weight: unset;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+}
+
+.save-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Definitions Modal */
+.definitions-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #FFFFFF; /* White */
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.definitions-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #14171A; /* Twitter Dark Text */
+  text-align: center;
+}
+
+.definitions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
+.definition-item {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.definition-icon {
+  height: 32px;
+  width: 32px;
+  color: #000000; /* Tweetbook Blue */
+}
+
+.definition-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #14171A;
+}
+
+.definition-text {
+  font-size: 14px;
+  color: #657786; /* Tweetbook Light Text */
+}
+
+/* Rules Modal */
+.rules-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #FFFFFF; /* White */
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rules-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #14171A; /* Tweetbook Dark Text */
+  text-align: center;
+}
+
+.rules-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
+.rule-item {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+
+.rule-icon {
+  height: 32px;
+  width: 32px;
+  color: #1DA1F2; /* Twitter Blue */
+}
+
+.rule-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #14171A;
+}
+
+.rule-text {
+  font-size: 14px;
+  color: #657786; /* Twitter Light Text */
+}
+
+/* Report Modal */
+.report-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #FFFFFF; /* White */
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.report-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #14171A; /* Tweetbook Dark Text */
+  text-align: center;
+}
+
+.report-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E1E8ED;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #0080ff;
+}
+
+/* Modal Close Button */
+.close-button {
+  background-color: #000000; /* Tweetbook Blue */
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 36px;
+  left: 38px;
+  background: none;
+  border: none;
+  color: #657786; /* Tweetbook Light Text */
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #1DA1F2; /* Tweetbook Blue */
+  background-color: #e7e7e7;
+}
+
+/* Modal Styles */
+.modal-content {
+  position: relative;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 50;
+}
+
+/* Modal Wrapper */
+.modal-wrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: none; /* White */
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+.blur-effect {
+  filter: blur(5px);
+  position: relative;
+}
+
+.blur-effect::after {
+  content: 'This post has been reported too many times.';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+.banned-overlay {
+  position: absolute;        /* Position the overlay absolutely relative to the parent */
+  inset: 0;                 /* Stretch the overlay to cover the entire parent element */
+  display: flex;            /* Use flexbox to center the content */
+  align-items: center;     /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  background: #000000;     /* Completely black background */
+  border-radius: 12px;     /* Rounded corners */
+  color: #ffffff;          /* White text color */
+  font-size: 1.25rem;      /* Larger text size for emphasis */
+  font-weight: 600;        /* Bold text */
+  pointer-events: none;    /* Prevent any interactions with the content inside */
+  z-index: 10;             /* Ensure it is above other content */
+}
+
+.banned-overlay p {
+  margin: 0;  /* Remove default margin */
+}
+.popopcs {
+  font-size: 5px;
+}
+.modaldd2 {
+  max-width: 28rem; /* max-w-md translates to max-width: 28rem; */
+  background-color: none; /* bg-main-background (assuming main background color is #f0f0f0) */
+  width: 100%; /* w-full translates to width: 100%; */
+  padding: 2rem; /* p-8 translates to padding: 2rem; */
+  border-radius: 1.5rem; /* rounded-2xl translates to border-radius: 1.5rem; */
+}
+.option1 {
+  text-align: left;
+  padding: 0.5rem;
+  border: 0.5px solid #e4e4e4; /* border border-gray-300 translates to border: 1px solid #d1d5db; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  background-color: none;
+  margin-bottom: -0.5rem; /* Add margin between buttons */
+  text-align: center;
+  color: rgb(132, 132, 132);
+  font-weight: bold; /* Make the font bold */
+  font-size: 12px; /* Increase font size */
+}
+
+.option1:first-child {
+  border-radius:  15px 15px 0 0;
+}
+modal-content
+.option1:hover {
+  background-color: #e4e4e4; /* hover:bg-gray-100 translates to background-color: #f3f4f6; */
+}
+.other123 {
+  text-align: left; /* text-left translates to text-align: left; */
+  padding: 0.5rem; /* p-2 translates to padding: 0.5rem; */
+  border: none; /* border border-gray-300 translates to border: 1px solid #d1d5db; */
+  background-color: #ffcbcb; /* bg-white translates to background-color: #ffffff; */
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  color: rgb(132, 132, 132);
+  font-weight: bold; /* Make the font bold */
+  font-size: 12px; /* Increase font size */
+}
+.Deletefassg2 {
+  margin-left: 460px;
+  width: 100px;
+  height: 30px;
+  border-radius: 105px;
+}
+.Deletefassg2:hover {
+  background: rgb(216, 216, 216);
+}
+.other123:hover {
+  background-color: #f89898; /* hover:bg-gray-100 translates to background-color: #f3f4f6; */
+}
+.textListssdasw2 {
+  background: none;
+  position: relative;
+  top: -30px;
+  left: 120px;
+  width: 400px;
+  height: 35px;
+  border-radius: 105px;
+  outline: none;
+  border: 1px solid rgb(233, 233, 233);
+  padding-left: 10px; /* Add padding to shift the text inside the input */
+}
+.ScheduleModal {
+  border: 1px solid rgb(245, 245, 245);
+  width: 119.0%;
+  margin-left: -76px;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.textListssdasw2::placeholder {
+  color: #a9a9a9; /* Optional: Adjust placeholder color if needed */
+}
+.profile-details424 {
+  border: 1px solid rgb(236, 236, 236);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+.flexitems-center535 {
+  color: #7d7d7d;
+  background: rgb(241, 241, 241);
+  width: 100%;
+}
+/* Icon Styles */
+.FaLock, .FaLockOpen {
+  width: 20px;
+  color: #e7e7e7;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Icon hover styles */
+.FaLock:hover, .FaLockOpen:hover {
+  color: #cdcdcd;
+  animation: flash 0.5s ease;
+}
+
+/* Flashing animation */
+@keyframes flash {
+  0% {
+    color: #000000;
+  }
+  50% {
+    color: #cdcdcd;
+  }
+  100% {
+    color: #000000;
+  }
+}
+.TooltipIcon {
+  position: relative; /* Relative positioning to place tooltip */
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.TooltipIcon:hover {
+  color: var(--highlight-color); /* Highlight color on hover */
+}
+.dddddd {
+  color: #539ef9;
+}
+.tooltip {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position below the icon */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center tooltip horizontally */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  white-space: nowrap;
+  font-size: 14px;
+  max-width: 200px;
+}
+
+/* Show the tooltip on hover */
+.TooltipIcon:hover .tooltip {
+  display: block;
+}
+
+.Public,
+.Private,
+.Spam {
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
+  color: var(--button-text-color);
+  padding: 8px 12px;
+  border-radius: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Public:disabled,
+.Private:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.FaLockOpen,
+.FaLock,
+.FaExclamationTriangle {
+  font-size: 16px;
+}
+
+/* Styles for Spam Modal */
+.spamModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 500px;
+  width: 100%;
+}
+
+.spamModal h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.spamTweetsList {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.spamTweet {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.spamTweet label {
+  flex: 1;
+}
+
+.SubmitSpam,
+.CancelSpam {
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
+  color: var(--button-text-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.CancelSpam {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.Following-Foryou {
+  border: 1px solid rgb(238, 238, 238);
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  top: -7.6px;
+  width: 300px;
+  max-width: 300px;
+  height: 45px; /* Updated height */
+  text-align: center;
+  left: -2px;
+  line-height: 45px; /* Updated line-height to match new height */
+  cursor: pointer;
+  color: rgb(133, 133, 133); /* Initial text color */
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+  position: relative; /* Added for positioning pseudo-element */
+  background: transparent; /* Default background */
+}
+
+.foryou {
+  border: 1px solid rgb(238, 238, 238);
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  top: -7.6px;
+  width: 300px;
+  max-width: 300px;
+  height: 45px; /* Updated height */
+  text-align: center;
+  line-height: 45px; /* Updated line-height to match new height */
+  cursor: pointer;
+  color: rgb(133, 133, 133); /* Initial text color */
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+  position: relative; /* Added for positioning pseudo-element */
+  background: transparent; /* Default background */
+}
+
+.Following-Foryou:hover {
+  background: rgb(238, 238, 238); /* Gray background on hover */
+}
+
+.foryou.active, .Following-Foryou.active {
+  background: rgb(238, 238, 238); /* Gray background for active state */
+  border-color: rgb(238, 238, 238); /* Keep gray border for active state */
+  color: rgb(0, 0, 0); /* Black text color when active */
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  top: 41px; /* Adjusted for new button height */
+  bottom: -5px; /* Position the line below the button */
+  left: 50%; /* Center the line horizontally */
+  transform: translateX(-50%); /* Adjust horizontal alignment */
+  width: 80px; /* Length of the underline */
+  height: 4px; /* Height of the underline */
+  background-color: rgb(199, 222, 251); /* Blue color for the underline */
+  border-radius: 30px; /* Rounded corners for underline */
+}
+
+.AccountSettings {
+  width: auto;
+  height: 40px;
+  text-align: left;
+  position: relative;
+  top: 30px;
+}
+.AccountSettings:hover {
+  background: #f7fbfd;
+}
+.AccountSettings12 {
+  margin-left: 10px;
+  color: rgb(127, 127, 127);
+}
+.AccountSettings124 {
+  margin-top: 10px;
+}
+.arrow {
+  width: 15px;
+  position: relative;
+  top: -20px;
+  left: 540px;
+}
+.MainContainerTR2 {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Center content vertically */
+  min-height: 100vh;       /* Ensure container takes full viewport height */
+  padding: 1rem;           /* Optional: Add padding if needed */
+}
+.MainContainerTR2 {
+  position: relative;
+}
+
+.AccountSettings {
+  display: block;
+  margin: 10px 0;
+}
+
+.modal-overlay {
+  background:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background: none;
+  padding: 20px;
+  border: 1px solid rgb(46, 46, 46);
+  border-left: none;
+  border-top: none;
+  border-radius: 0px;
+  width: 1000px;
+  height: 100%;
+  box-shadow: none;
+  position: absolute;
+  top: 30;
+  right: 160px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e5e5e5;
+  border: none;
+  border-radius: 100%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-modal:hover {
+  background: #d0d0d0;
+}
+.spanfont34 {
+  font-size: 12px;
+}
+.Accountinformation {
+  display: block; /* Ensures buttons are displayed as block elements */
+  width: 100%; /* Adjust width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  margin-bottom: 30px; /* Adds space between buttons */
+  background-color: none; /* Adjust background color as needed */
+  border: 1px solid rgb(208, 208, 208); /* Adjust border as needed */
+  border-bottom: none;
+  border-top: none;
+  border-radius: 0px; /* Adjust border radius as needed */
+  text-align: left; /* Align text to the left */
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+.Accountinformation:hover {
+  background: #f7fbfd;
+}
+.financed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  width: 150px;
+  height: 30px;
+  border-radius: 0px; /* Adjusted for a realistic rounded rectangle */
+  cursor: pointer;
+  border: 1px solid #ddd; /* Border around the dropdown */
+  background-color: #ffffff; /* White background */
+}
+
+.financed:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+.premiumpng {
+  width: 200px;
+  position: relative;
+  top: -40px;
+  cursor: pointer;
+}
+.arrow-down {
+  position: relative;
+  top: -10px;
+  left: 128px;
+  width: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.premium-button,
+.pi-more-pi-button {
+  border: 1px solid #ddd; /* Border around the dropdown */
+  border-radius: 0px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: none; /* Shadow for better visibility */
+  width: 150px; /* Match the width of the button */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: block; /* Ensure it displays as a block element */
+  border-top: none;
+  position: relative;
+  top: -10px;
+}
+
+.premium-button:hover,
+.pi-more-pi-button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+.header {
+  position: relative;
+  top: -150px;
+}
+.plans-container {
+  position: relative;
+  top: -150px;
+}
+.subscribe {
+  position: relative;
+  top: -150px;
+}
+.messageNew {
+  background: rgb(146, 85, 230);
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 105px;
+  text-align: center;
+  position: absolute;
+  color: white;
+  top: 400px;
+  left: 52%;
+  transition: background 0.2s ease-in-out;
+}
+@media (max-width: 600px) { /* Adjust the max-width value as needed */
+  .messageNew {
+    top: 500px;
+    left: 28%;
+  }
+}
+
+.messageNew:hover {
+  background: rgb(185, 141, 246);
+}
+.messageSelecttext {
+  font-size: 12px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 105px;
+  text-align: center;
+  position: absolute;
+  top: 335px;
+  left: 52%;
+  transition: background 0.2s ease-in-out;
+}
+.messageSelecttext1 {
+  font-size: 22px;
+  font: caption;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 105px;
+  text-align: center;
+  position: absolute;
+  top: 310px;
+  left: 52%;
+  transition: background 0.2s ease-in-out;
+}
+.modal-content24 {
+  border: 1px solid rgb(221, 221, 221);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.Searchpeopl4e {
+  background: #e9e9e9;
+  width: 350px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 105px;
+  color: rgb(0, 0, 0); /* Ensure text inside input is visible */
+  padding-left: 10px; /* Add padding to ensure text doesn't touch the edge */
+  outline: none;
+}
+
+.Searchpeopl4e::placeholder {
+  color: #6e6e6e; /* Change placeholder text color */
+  margin-left: 10px; /* Add margin to placeholder text */
+}
+.SearchClosebtn {
+  background: #e9e9e9;
+  width: 50px;
+  height: 40px;
+  border-radius: 105px;
+}
+.usernamep2 {
+  text-align: center;
+}
+.usernamep23 {
+  background: white;
+  z-index: 9999px;
+  border: 1px solid rgb(219, 219, 219);
+  border-left: none;
+  border-right: none;
+  margin-top: 10px;
+}
+.closeSubModal2 {
+  background: rgb(232, 232, 232);
+  width: 100px;
+  height: 35px;
+  border-radius: 105px;
+  margin-top: -150px;
+}
+.deactivateaccount2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+.deactivateaccount2span {
+  font-size: 12px;
+}
+.deactivateaccount2span2 {
+  font-size: 12px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 0; /* Ensure there are no margins that create gaps */
+}
+.eligible2 {
+  background: rgb(253, 64, 155);
+  color: white;
+  width: 150px;
+  max-width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.eligible2:hover {
+  background: rgb(238, 116, 175);
+  cursor: pointer;
+}
+.verifiedbuttonfollowers {
+  background-color: #f2f2f2; /* Example background color */
+  color: rgb(143, 143, 143); /* Text color */
+  border: none;
+  border-radius: 105px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  width: 100%;
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.verifiedbuttonfollowers:hover {
+  background-color: #e2e2e2; /* Darker shade of background color on hover */
+  box-shadow:none; /* Shadow effect on hover */
+}
+.verifiedbuttonfollowers3 {
+  background-color: #f2f2f2; /* Example background color */
+  color: rgb(143, 143, 143); /* Text color */
+  border: none;
+  border-radius: 105px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  width: 100%;
+  font-size: 13px; /* Font size */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+.verifiedbuttonfollowers3:hover {
+  background-color: #e2e2e2; /* Darker shade of background color on hover */
+  box-shadow:none; /* Shadow effect on hover */
+}
+.Message-button32 {
+  position: relative;
+  top: 2px;
+  left: 0px;
+  height: 35px;
+}
+.hashtagclassNamea2 {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  background: none;
+  margin-bottom: 0px;
+}
+.hashtagclassNamea22 {
+    position: relative;
+  left: 0px;
+  width: 100%;
+  background: none;
+  margin-bottom: 0px;
+}
+.hashtagspan {
+  position: relative;
+  left: -160px;
+}
+.informationAccountSettingsUScssbutton {
+  width: 100%;
+}
+.informationAccountSettingsUScssbutton:hover {
+  background: #f7f7f7;
+}
+.Settingsprofile {
+  position: relative;
+  top: -2px;
+}
+.CloseCreation {
+  position: relative;
+  top: 13px;
+  left: 15%;
+  background: #000000;
+  color: white;
+  width: 70%;
+  height: 40px;
+  border-radius: 105px;
+}
+// .TweetbookSearch {
+//   position: absolute;
+//   top: 8px;
+//   left: 10px;
+//   width: 17%;
+// }
+
+// /* Mobile styles */
+// @media (max-width: 768px) {
+//   .TweetbookSearch {
+//     border: 1px solid #d3d3d3;
+//     border-radius: 105px;
+//     position: absolute;
+//     left: 30%;
+//   }
+// }
+.fgdrgdfgdfgdgfgr {
+  position: relative;
+  top: 50px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .fgdrgdfgdfgdgfgr {
+    position: relative;
+    top: 0px;
+  }
+}
+.CreateBtnPost222w42 {
+  height: 35px;
+  width: 35px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  background: rgb(246, 246, 246);
+  position: relative;
+  top: 16px;
+  right: -40px;
+}
+.TweetbookSearch2 {
+  position: relative;
+  top: 15px;
+  left: 10px;
+  width: 95%;
+}
+.TweetbookSearch222 {
+  position: relative;
+  top: 15px;
+  left: 50px;
+  width: 85%;
+}
+.hover-animationVc {
+  cursor: pointer;
+}
+.hoverclassNameonClickNav {
+  position: relative;
+  top: 5px;
+  left: 36px;
+  width: 100%;
+}
+.ButtonProfileSettings {
+  position: relative;
+  top: 10px;
+}
+.ProfileTEct {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  margin: 0;
+  padding-left: 0;
+}
+.custom-button2hyeh14 {
+  position: relative;
+  top: 60px;
+}
+.spanYourAccount22 {
+  position: absolute;
+  font-size: 15px;
+  top: 0px;
+  color: #4a4a4a;
+  left: 60px;
+  padding: 10px;
+}
+.YourAccount {
+  font-weight: bold;
+  font-size: 17px;
+}
+.gaopuagwg {
+  position: relative;
+  top: 15px;
+}
+.svgclassName72 {
+  position: relative;
+  top: -25px;
+  left: 95px;
+}
+.svgclassName722 {
+  position: relative;
+  top: -25px;
+  left: 165px;
+}
+.ProfileTEct22 {
+  position: relative;
+  top: -10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  margin: 0;
+  padding-left: 0;
+}
+.svgclassName {
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  color: #6a6a6a;
+}
+.svgclassName2 {
+  position: absolute;
+  top: 67px;
+  right: 0px;
+  color: #6a6a6a;
+}.svgclassName3 {
+  position: absolute;
+  top: 123px;
+  right: 0px;
+  color: #6a6a6a;
+}.svgclassName4 {
+  position: absolute;
+  top: 179px;
+  right: 0px;
+  color: #6a6a6a;
+}.svgclassName5 {
+  position: absolute;
+  top: 234px;
+  right: 0px;
+  color: #6a6a6a;
+}.svgclassName6 {
+  position: absolute;
+  top: 292px;
+  right: 0px;
+  color: #6a6a6a;
+}.svgclassName7 {
+  position: absolute;
+  top: 348px;
+  right: 0px;
+  color: #6a6a6a;
+}.svgclassName8 {
+  position: absolute;
+  right: 0px;
+  color: #6a6a6a;
+}
+.svgclassName722 {
+  position: relative;
+  top: 4px;
+  left: 5px;
+}
+
+
+.spanYourAccount {
+  position: absolute;
+  font-size: 13px;
+  top: 40px;
+  color: #4a4a4a;
+  left: 0px;
+  padding: 10px;
+}
+.spanYourAccount2424 {
+  font-size: 13px;
+  color: #4a4a4a;
+  left: 0px;
+  padding: 10px;
+}
+.spanYourAccount222 {
+  position: relative;
+  font-size: 13px;
+  top: -20px;
+  color: #4a4a4a;
+  left: 0px;
+  padding: 10px;
+}
+.inputclassNamepasswordW {
+  position: relative;
+  top: 40px;
+}
+.spanYourAccount2 {
+  position: absolute;
+  font-size: 13px;
+  top: 20px;
+  color: #4a4a4a;
+  left: 0px;
+  padding: 10px;
+}
+.spanYourAccount232141 {
+  position: relative;
+  font-size: 13px;
+  top: 15px;
+  color: #4a4a4a;
+  left: 7px;
+  padding: 10px;
+}
+.spanYourAccount2321412 {
+  position: relative;
+  left: -10px;
+}
+.spanYourAccount23 {
+  position: absolute;
+  font-size: 13px;
+  top: 25px;
+  color: #4a4a4a;
+  left: 7px;
+  padding: 10px;
+}
+.spanYourAccount232 {
+  position: absolute;
+  font-size: 12px;
+  top: 140px;
+  color: #4a4a4a;
+  left: 222px;
+  z-index: 1000;
+  padding: 10px;
+}
+.spanYourAccount23bonus {
+
+}
+.TweetbookHombfvbfbfe {
+  position: relative;
+  top: -2px;
+}
+
+.SubscribeSubmit {
+  position: absolute;
+  font-size: 12px;
+  top: 100px;
+  background: #c936cc;
+  width: 80%;
+  color: white;
+  font-weight: bold;
+  left: 50px;
+  border-radius: 105px;
+  z-index: 1000;
+  padding: 10px;
+}
+.spanYourAccount23bonus32 {
+  position: relative;
+  top: 300px;
+}
+.input-field43 {
+  position: relative;
+  top: 10px;
+  left: -10px;
+}
+.Posthidden {
+  position: relative;
+  top: -3px;
+}
+.TweetbookHomee342 {
+  position: absolute;
+  left: 40%;
+}
+.TweetbookHomee3424 {
+  position: relative;
+  top: 30px;
+}
+.Box21 {
+  padding: 30px;
+  border-radius: 20px;
+}
+.CardNumberElement {
+  border: none;
+  background: #f7fbfd;
+  color: white;
+  width: 300px; /* Adjust as needed */
+  height: 50px;
+}
+.SubscribePay {
+  position: relative;
+  top: -9px;
+  font-weight: bold;
+}
+.btnH12P222222 {
+  position: relative;
+  top: -7px;
+}
+.card-container {
+  display: flex; /* Use flex to align elements horizontally */
+  align-items: center; /* Center vertically if needed */
+}
+.SubscribeSubmit224 {
+  position: relative;
+  font-size: 17px;
+  top: 5px;
+  background: #f7fbfd;
+  width: 100%;
+  color: #a7a7a7;
+  font-weight: bold;
+  left: 0px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.SubscribeSubmit2 {
+  position: absolute;
+  font-size: 12px;
+  top: 170px;
+  background: #c936cc;
+  width: 30%;
+  color: white;
+  font-weight: bold;
+  left: 50px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.spanYourAccount23bonus3 {
+  border: 1px solid #f3f4f6;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  position: relative;
+  top: 300px;
+}
+.StatsEmptybonus2 {
+  position: relative;
+  top: 100px;
+  height: 100px;
+}
+.StatsEmptybonus {
+  position: relative;
+  top: 50px;
+}
+.spanYourAccount233 {
+  position: absolute;
+  font-size: 13px;
+  top: 45px;
+  color: #4a4a4a;
+  left: 7px;
+  padding: 10px;
+}
+.UserAvatar2222 {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  padding: 10px;
+}
+.UserAvatar222222 {
+  position: relative;
+  top: -20px;
+  left: 6px;
+  padding: 4px;
+}
+.spanYourAccount22222 {
+  position: absolute;
+  font-size: 15px;
+  top: 8px;
+  font-weight: bold;
+  color: #4a4a4a;
+  left: 60px;
+  padding: 10px;
+}
+.UserAvatar22222 {
+  background: white;
+  box-shadow: 0px 0px 10px 2px rgba(197, 202, 205, 0.3); /* Subtle, soft shadow with transparency */
+  width: 85%;
+  height: 60px;
+  position: absolute;
+  border-radius: 15px;
+  position: relative;
+  top: 38px;
+}
+.spanYourAccount222222 {
+  background: 
+    linear-gradient(225deg, rgba(171, 43, 174, 0) 0%, rgba(171, 43, 174, 0.6) 100%),
+    linear-gradient(225deg, rgba(212, 92, 214, 0.4) 0%, rgba(212, 92, 214, 0) 100%),
+    linear-gradient(135deg, rgb(249, 24, 128) 0%, rgba(249, 24, 128, 0) 100%),
+    linear-gradient(135deg, rgba(246, 75, 92, 0) 0%, rgb(246, 75, 92) 100%),
+    linear-gradient(0deg, rgb(255, 122, 0) 0%, rgb(255, 122, 0) 100%);
+  border-radius: 0px 0px 150px 0px; /* Top corners 0px, bottom corners rounded */
+  padding: 20px;
+  color: #fff;
+  font-size: 1.5em;
+}
+.Subscribe_to_UserName {
+  position: relative;
+  top: 8px;
+  left: -55px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.spanYourAccount222222 {
+  align-items: stretch;
+  background-color: rgba(0, 0, 0, 0.00);
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  list-style: none;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+}
+.Subscribebutton2 {
+  background: #000;
+  color: white;
+  height: 28px;
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  width: 95px;
+  border-radius: 105px;
+ }
+ .SubscribeA↑ {
+  position: absolute;
+  top: 5px;
+  right: 13px;
+  border-radius: 105px;
+  color: white;
+  width: 30px;
+  height: 28px;
+  background: #000;
+ }
+ .fixed-top-bar33 {
+  position: sticky; /* Change from relative to sticky */
+  top: 0; /* Keep it at the top of the scrollable area */
+  left: 0;
+  right: 0;
+  height: 47px; /* Maintain your height */
+  background-color: white; /* Add background color for visibility */
+  z-index: 10;
+  border: 1px solid rgb(243, 243, 243);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.billingcycleUpgradePremium {
+  position: relative;
+  top: 20px;
+}
+.cycle-button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px 0px  0px 30px;
+  background: #eff3f4;
+  color: grey;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 35px;
+}
+.MonthlyAnnual {
+  position: relative;
+  top: -3px;
+}
+.cycle-button2 {
+  height: 35px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 0px 30px  30px 0px;
+  background: #eff3f4;
+  color: grey;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cycle-button2.active {
+  background-color: white;
+  color: grey;
+  border-color: #007bff;
+}
+.cycle-button.active {
+  background-color: white;
+  color: grey;
+  border-color: #007bff;
+}
+.billing-cycle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.UpgradePremium {
+  font-weight: bold;
+  font-size: 50px;
+  position: relative;
+  left: 10%;
+}
+.premium_Plus_immg {
+  position: relative;
+  top: 143px;
+}
+.LoadingclassName {
+  position: relative;
+  left: 60%;
+}
+.container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+.iconNamename2232 {
+  position: absolute;
+  margin-top: 0px;
+  font-size: 20px;
+  left: 70px;
+  font-family: 'Helvetica', 'Arial', sans-serif; /* Using Helvetica or Arial for a clean look */
+  font-weight: normal; /* Adjust weight if needed (e.g., bold for 'Home') */
+  color: #333; /* Dark color similar to what you have */
+}
+.spanYourAccount2334 {
+  position: relative;
+  font-size: 14.5px;
+  top: 25px;
+  color: #4a4a4a;
+  left: 7px;
+  padding: 10px;
+}
+.search-bar123 {
+  z-index: 1000; /* Ensures it's on top of other elements */
+  position: fixed; /* Fixes the element in place */
+  top: 8px; /* Adjust the top distance from the viewport */
+  width: 18.5%;
+}
+.dfghdhddfhrhhr {
+  position: relative;
+  top: 50px;
+}
+// .InputisMobile {
+//   position: relative;
+//   top: 60px;
+// }
+
+.search-bar1234 {
+  z-index: 1000;
+  position: relative;
+  top: 6px;
+}
+.ADTweetbook123ee {
+  position: relative;
+  top: 15px;
+  border-radius: 15px;
+}
+.Creatingcommunitybutton {
+  text-align: center;
+  background: #333;
+  position: relative;
+  top: 115px;
+  left: 18px;
+  color: white;
+  border-radius: 58px;
+  width: 90%;
+  height: 40px;
+  font-weight: bold;
+}
+.CreatingcommunitybuttonSpan {
+  position: relative;
+  top: -4px;
+}
+.ADTweetbook2A23 {
+  border-radius: 15px;
+  height: 200px;
+}
+.iconName {
+  margin-right: 20px; /* Space between items */
+  text-align: left; /* Align text to the left */
+}
+
+
+.fixed-top-bar333 {
+  position: fixed; /* Keep fixed positioning */
+  bottom: 0px; /* Set position to the bottom */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 170px; /* Maintain your height */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spanYourAccount2spanYourAccount2 {
+  position: absolute;
+  font-size: 11px;
+  top: 60px;
+  border-radius: 10px;
+  color: #4a4a4a;
+  right: 28%;
+  padding: 10px;
+}
+.sdgssfdhsdgsedsegg {
+  position: relative;
+  top: -8px;
+}
+.subscribe-button13131 {
+  padding: 15px 30px;
+  color: white;
+  width: 23%;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 34px;
+  position: relative;
+  top: -50px;
+  left: -27.8%;
+}
+/* Adjust top for mobile devices */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+  .subscribe-button13131 {
+      top: 60px; /* Adjusted top for mobile */
+      left: -20px;
+      width: 90%;
+  }
+}
+.Billedbutton13131 {
+  position: absolute;
+  top: 30px;
+  left: 40%;
+}
+.Billedbutton13131222 {
+  position: absolute;
+  top: 95px;
+  left: 40%;
+  cursor: pointer;
+}
+.XButton1232 {
+  position: relative;
+  left: 8px;
+}
+.Posttextlg {
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+.ADTweetbooefefsfdsfseefk {
+  position: relative;
+  top: -6px;
+}
+.Subscribetext13 {
+  position: relative;
+  left: -38%;
+}
+.XButton123 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.XButton1232egeg3 {
+  position: relative;
+  top: -3px;
+  left: -3px;
+}
+.XButton1233 {
+  position: relative;
+  top: -505px;
+  left: -43px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.XButton1233:hover {
+  background: #efefef;
+}
+.XButton1233:active {
+  background: rgb(222, 222, 222);
+}
+.Youmight {
+  position: relative;
+  top: 5px;
+  left: 35px;
+}
+.dsgseggdgsegeg {
+  position: relative;
+  top: 10px;
+}
+.XButton123:hover {
+  background: #efefef;
+}
+.ulmonthPremium {
+  position: relative;
+  top: 10px;
+  margin-left: -120px;
+}
+.ulmonthPremium2 {
+  position: relative;
+  top: 10px;
+  margin-left: -120px;
+}
+.ulmonthPremium3 {
+  position: relative;
+  top: 10px;
+  margin-left: -160px;
+}
+.plan123 {
+  background-color: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 105px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  position: absolute;
+  margin-left: 100px;
+  background: white;
+}
+.plan123.selected {
+  border-color: #007bff;
+  border: 2px solid #1d9bf0;
+}
+.plan1234 {
+  background-color: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 105px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  position: absolute;
+  margin-left: 100px;
+  background: white;
+}
+.plan1234.selected {
+  border-color: #007bff;
+  border: 2px solid #1d9bf0;
+}
+.plan12345 {
+  background-color: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 105px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  position: absolute;
+  margin-left: 100px;
+  background: white;
+}
+.plan12345.selected {
+  border-color: #007bff;
+  border: 2px solid #1d9bf0;
+}
+.ulmonthPremium4 {
+  position: relative;
+  top: 10px;
+  margin-left: -130px;
+}
+.XButton123:active {
+  background: rgb(222, 222, 222);
+}
+.Billedbutton131312 {
+  position: absolute;
+  top: 50px;
+  left: 40%;
+}
+.Billedbutton1313122 {
+  position: absolute;
+  top: 75px;
+  left: 40%;
+}
+.spanYourAccount2222 {
+  position: relative;
+  font-size: 12px;
+  top: 30px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  left: 5px;
+  padding: 10px;
+}
+.informationAccountSettingsUScsset036290{
+  font-size: 13px;
+  position: relative;
+  top: 0px;
+  color: #4a4a4a;
+  left: -120px;
+}
+.informationAccountSettingsUScsset0362902{
+  font-size: 13px;
+  position: relative;
+  top: 0px;
+  color: #4a4a4a;
+  left: -230px;
+}
+.messageType2 {
+  width: 550px;
+  height: 40px;
+  outline: none;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 105px;
+  position: fixed;
+  bottom: 10px;
+  margin-left: 10px;
+  background: none;
+}
+.chat-container-input2 {
+  width: 575px;
+  background: none;
+  height: 60px;
+  outline: none;
+  border-radius: 0px;
+  position: fixed;
+  bottom: 0px;
+  margin-left: 0px;
+  border: 1px solid rgb(239, 239, 239);
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+@media (max-width: 600px) {
+  .chat-container-input2 {
+    width: 575px;
+    background: none;
+    height: 70px;
+    outline: none;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 50px;
+    margin-left: 0px;
+    border: 1px solid rgb(239, 239, 239);
+    border-left: none;
+    border-bottom: none;
+  }
+}
+@media (max-width: 600px) {
+  .messageType2 {
+    width: 410px;
+    max-width: 410px;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 105px;
+    position: fixed;
+    bottom: 70px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 600px) {
+    .PaperAirplaneIcon2 {
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      position: fixed;
+      bottom: 340px;
+       left: 0px;
+      transform: translateX(-50%); /* Adjusts to be centered */
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: center; /* Centers vertically */
+      color: #6ed6ff;
+    }
+}
+.PaperAirplaneIcon2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 13px;
+  margin-left: 535px;
+  transform: translateX(-50%); /* Adjusts to be centered */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  color: #6ed6ff;
+}
+.PaperAirplaneIcon2:hover {
+  width: 35px;
+  height: 35px;  
+  background: #f0f0f0;
+  color: #00b7ff;
+}
+/* Correct way to style the placeholder */
+.messageType2::placeholder {
+  position: relative;
+  left: 20px;
+}
+.modal-content24 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background: none;
+  border: 1px solid rgb(237, 237, 237);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  height: 60px;
+}
+
+.user-photo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.placeholder-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.user-modal h2 {
+  margin: 0;
+}
+.exclamation-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+  margin-left: 430px;
+}
+.exclamation-icon:hover {
+  width: 40px;
+  height: 40px;
+  background: #e7e7e7;
+}
+.overlay2 {
+  width: 100%;
+  height: 400%;
+  background: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin-top: -10px;
+}
+.close-overlay323 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+  margin-left: 530px;
+}
+.close-overlay323:hover {
+  width: 40px;
+  height: 40px;
+  background: #e7e7e7;
+}
+.ButtonBorder {
+  border: 1px solid rgb(235, 235, 235);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content24 {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-content-white {
+  background: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.usernamecentermessage2 {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  font-size: 30px;
+  font-display: initial;
+  font-style: unset;
+  font-weight: bold;
+  background: linear-gradient(to right, rgb(146, 85, 230) 50%, black 50%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, colorShift 2s infinite linear;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.Message-button323 {
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Keep the height as specified */
+  position: relative;
+  top: 6px;
+  top:  45%;
+}
+
+
+.Message-button3234 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px; /* Keep the height as specified */
+  position: relative;
+  top: -3px;
+  padding: 0; /* Ensure no extra padding is applied */
+}
+.Message-button32333 {
+  position: relative;
+  top: 5px;
+}
+
+
+/* Common button styling */
+.BasicPremiumPlusButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none; /* Twitter blue color */
+  color: rgb(145, 145, 145);
+  border: 1px solid rgb(241, 241, 241);
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: none; /* Shadow effect */
+  cursor: pointer;
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+  width: 100%;
+}
+
+/* Button hover effect */
+.BasicPremiumPlusButton:hover {
+  background-color: #ececec; /* Slightly darker blue on hover */
+}
+
+/* Icon styling */
+.BasicPremiumPlusButton .icon {
+  margin-right: 8px; /* Space between icon and text */
+  width: 20px; /* Icon size */
+  height: 20px; /* Icon size */
+}
+.Message-button323333 {
+  position: relative;
+  top: -3px;
+}
+.Message-button3233333 {
+  height: 40px;
+}
+.Message-button32333434 {
+  position: relative;
+  top: -3px;
+}
+.Message-button323334344 {
+  position: relative;
+  top: 1px;
+}
+.BuyaSuperThanks {
+  position: relative;
+  top: 0px;
+  margin-left: 0px;
+  background: rgb(120, 188, 252);
+}
+.floating-input {
+  border: none;
+  outline: none;
+  background: #ececec;
+  margin-left: 10px;
+  width: 300px;
+  height: 40px;
+  border-radius: 105px;
+  padding-left: 20px; /* Adjust padding to align text and placeholder */
+}
+
+.floating-input::placeholder {
+  margin-left: 0; /* Reset margin */
+  color: #a8a8a8; /* Example color for placeholder */
+}
+.ContinuewBuy {
+  text-align: center;
+  color: #ffffff;
+  background: #000;
+  border-radius: 105px;
+}
+.Guidelines {
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+}
+.Guidelines2 {
+  font-size: 12px;
+  position: relative;
+  top: -7px;
+  margin-left: 200px;
+  color: #0077ff;
+}
+.scrollable-container {
+  position: relative;
+  top: -10px;
+  border: none;
+  border-radius: 15px;
+}
+.scrollable-containerModal {
+  height: 600px;
+  max-height: 600px;
+  width: 700px;
+  max-width: 700px;
+}
+.fixedsfgew2 {
+  position: relative;
+  top: -70px;
+  left: -50px;
+}
+.fixedsfgew24 {
+  background: rgb(239, 239, 239);
+  width: 100%;
+}
+.fixedsfgew243 {
+  background: rgb(239, 239, 239);
+  width: 100%;
+  position: relative;
+  top: 10px;
+  z-index: 1000;
+}
+
+.openBlockHiBa {
+  background: none;
+  width: 100%;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  margin-left: 0px;
+  margin-top: -10px;
+  border: 1px solid rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.openBlockHiBa:hover {
+  background: rgb(232, 232, 232);
+}
+.openBlockHiBan2 {
+  font-size: 40px;
+}
+.dark-bg-tab4214124 {
+  height: 38px;
+  position: relative;
+  top: 2px;
+  left: -28px;
+}
+.Message-button323333 {
+  height: 38px;
+}
+.Search648949 {
+  position: relative;
+  left: 0px;
+
+  @media (max-width: 768px) { // Adjust the max-width to target different phone sizes
+    position: relative;
+    left: 0px;
+  }
+
+  @media (max-width: 480px) { // For smaller phones
+  position: relative;
+  left: 0px;
+  max-width: 420px;
+}
+}
+.SigninBtn {
+  position: relative;
+  top: -15px;
+  left: -37px;
+}
+.divclassNameAccount {
+  position: absolute;
+  left: 40%;
+}
+.AccountBtn2 {
+  width: 112%;
+  position: relative;
+  left: -10px;
+  border: none;
+  margin-bottom: 1px;
+  border-radius: 0px;
+}
+.AccountBtn2:hover {
+  background: rgb(240, 240, 240);
+  border: 1.5px solid #2CB9FF;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+.AccountBtn2:active {
+  background: rgb(240, 240, 240);
+  border: 1.5px solid #2CB9FF;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+.YouraccountSettings {
+  border: none;
+  width: 100%;
+  margin-bottom: -8px;
+}
+.YouraccountSettings:hover {
+  border: 2px solid #0080ff;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  background: rgb(244, 244, 244);
+}
+.YouraccountSettings:active {
+  border: 2px solid #0080ff;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  background: rgb(240, 240, 240);
+}
+.gdsgsegseg {
+  font-weight: lighter;
+}
+/* Hide the h1 element on mobile devices */
+@media (max-width: 600px) {
+  .tweetbook2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+.SettingsUScss {
+  position: relative;
+  top: 100px;
+}
+.SettingsUScss14151 {
+  position: relative;
+  top: 0px;
+  left: 0%;
+}
+.Settingsbtn {
+  position: relative;
+  top: 35px;
+}
+.Highlight {
+  position: relative;
+  left: -15px;
+}
+.AccountDelete {
+  text-align: center;
+  background: #FA8072;
+  width: 100%; /* Makes each input take the full width of the container */
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+}
+.inputChangePassword {
+  display: block;
+  width: 140%; /* Makes each input take the full width of the container */
+  border: 1px solid #cfe5fb;
+  border-radius: 15px;
+  outline: none;
+  height: 50px;
+  margin-bottom: 10px; /* Space between inputs */
+}
+.inputChangePasswordBtn {
+  text-align: center;
+  background: #cfe5fb;
+  width: 140%; /* Makes each input take the full width of the container */
+  border-radius: 15px;
+  height: 50px;
+  color: white;
+}
+.inputChangePassword::placeholder {
+  position: relative;
+  left: 10px;
+}
+.informationAccountSettingsUScss {
+  font-size: 13px;
+  position: relative;
+  top: -7px;
+  color: #4a4a4a;
+  left: 15px;
+}
+
+.informationAccountSettingsUScss224 {
+  font-size: 13px;
+  position: relative;
+  top: -7px;
+  color: #4a4a4a;
+  left: 15px;
+  color: #002bff;
+  border: 1px solid #002bff;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.informationAccountSettingsUScss22 {
+  font-size: 13px;
+  position: relative;
+  top: 0px;
+  color: #4a4a4a;
+  left: 0px;
+}
+.informationAccountSettingsUScss2 {
+  font-size: 16px;
+  position: relative;
+  top: -7px;
+  color: black;
+  font-weight: bold;
+  left: 15px;
+}
+.YouraccountSettingsclassName {
+  position: absolute;
+  left: 15px;
+}
+.YouraccountSettingsclassName2 {
+  position: relative;
+  left: 30px;
+  display: block; /* Ensure each text is treated as a block element */
+  width: 90%; /* Ensure all texts are the same width */
+  text-align: justify; /* This will justify the text, ensuring it spans the same width */
+}
+
+
+.closehandleSens {
+  position: relative;
+  top: -130px;
+  left: 247px;
+}
+.Switch-accounts-Css {
+  position: relative;
+  top: -30px;
+  left: -27px;
+}
+.btn-clik-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-clik-2:hover {
+  background: rgb(242, 242, 242);
+}
+.ShareWhiteSociia {
+  box-shadow: 0 4px 14px 4px rgb(230, 230, 230);
+}
+.ClipStreamText {
+  font-size: 12px;
+}
+.ClipStreamTextMore {
+  color: #0077ff;
+  cursor: pointer;
+}
+.viewCountview {
+  position: relative;
+  top: 2px;
+  margin-left: -40px;
+  left: -30px;
+}
+.viewCountviewTweetOption {
+  position: relative;
+  top: 0px;
+  left: -20px;
+}
+
+.modal-overlay5262236 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-2326727473 {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal-2326727473 h2 {
+  margin-top: 0;
+}
+
+.modal-2326727473 button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 105px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.modal-2326727473 button:hover {
+  background: #262626;
+}
+.ClipStreamText2 {
+  font-size: 14px;
+  color: #494949;
+}
+.ClipStreamText22 {
+  margin-top: 3px;
+  font-size: 20px;
+}
+// .Profilepage1 {
+//   width: 40%;
+//   max-width: 200%;
+//   margin-left: -300px; /* Center horizontally */
+// }
+
+// /* Adjustments for tablet screens */
+// @media (max-width: 768px) {
+//   .Profilepage1 {
+//     width: 80%;
+//     max-width: 100%;
+//     margin-left: -10%;
+//   }
+// }
+// .biodelits15 {
+//   cursor: pointer;
+// }
+// /* Adjustments for phone screens */
+// @media (max-width: 480px) {
+//   .Profilepage1 {
+//     width: 100%;
+//     max-width: 100%;
+//     margin-left: 0;
+//   }
+// }
+// .accent-tab1154 {
+//   position: relative;
+//   top: 15px;
+// }
+// .object-cover {
+//   position: relative;
+//   top: 40px;
+//   border-radius: 20px;
+// }
+// .accent-tabcover5img {
+//   width: 140%;
+//   margin-left: -100px;
+//   border-radius: 10px;
+// }
+
+// /* Adjustments for tablet screens */
+// @media (max-width: 768px) {
+//   .accent-tabcover5img {
+//     width: 100%;
+//     margin-left: -20px;
+//   }
+// }
+
+// /* Adjustments for phone screens */
+// @media (max-width: 480px) {
+//   .accent-tabcover5img {
+//     width: 100%;
+//     margin-left: 0;
+//   }
+// }
+.glow-on-hover {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 105px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 105px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 105px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+.emoji {
+  font-size: 20px;
+  position: relative;
+  left: -15px;
+}
+
+
+.glow-on-hover2 {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 105px;
+}
+
+.glow-on-hover2:before {
+  content: '';
+  background: linear-gradient(45deg, #63adf7, #000000, #63adf7, #000000, #63adf7, #000000, #63adf7, #000000, #63adf7);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 105px;
+}
+
+.glow-on-hover2:active:after {
+  background: transparent;
+}
+
+.glow-on-hover2:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover2:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 105px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+.JoinBtn2 {
+  border-radius: 105px;
+  width: 95%;
+  border: 1px solid rgb(243, 243, 243);
+  position: relative;
+  left: 15px;
+  color: rgb(110, 110, 110);
+  font-size: 13px;
+}
+.JoinBtn2:hover {
+  background: rgb(243, 243, 243);
+}
+.inputSearchcommunities {
+  position: relative;
+  top: -10px;
+}
+.GroupBorder2 {
+  border: 1px solid rgb(243, 243, 243);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.handleOptionsClick {
+  position: relative;
+  top: -10px;
+}
+.rBtn {
+  color: white;
+  background: #fd5c63;
+  border-radius: 10px;
+  height: 30px;
+  position: relative;
+  top: -10px;
+  justify-content: center;
+}
+.rBtn2 {
+  position: relative;
+  top: -8px;
+  width: 100px;
+}
+.GroupInput {
+  outline: none;
+  border-radius: 100px;
+  width: 80%;
+}
+.Report {
+  background: #ebebeb;
+  color: rgb(113, 113, 113);
+  border-radius: 105px;
+}
+.Report2 {
+  background: #ebebeb;
+  color: rgb(113, 113, 113);
+  width: 100px;
+  max-width: 100px;
+  border-radius: 105px;
+}
+.opReport {
+  font-size: 14px;
+}
+.GroupInput2 {
+  outline: none;
+  border-radius: 100px;
+  width: 80%;
+}
+.HeroIcon {
+  border: none;
+  width: 90%;
+  border-radius: 105px;
+  color: #555555;
+}
+.HeroIcon2 {
+  border: none;
+  width: 40px;
+  position: relative;
+  left: -10px;
+  border-radius: 105px;
+  color: #555555;
+}
+.HeroIconHover:hover {
+  background: whitesmoke;
+}
+.communitygroupTextarea {
+  outline: none;
+  border: 1px solid rgb(243, 243, 243);
+}
+.communityDev {
+  outline: none;
+  border: 1px solid rgb(243, 243, 243);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.betweenisGroupCreator {
+  outline: none;
+  border: 1px solid rgb(243, 243, 243);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.messages-list24 {
+  border-right: none;
+  border-left: none;
+}
+.CreateBtnPost {
+  border: 1px solid rgb(243, 243, 243);
+  height: 30px;
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  border-radius: 4px; /* Optional: Add border radius */
+  position: relative;
+  left: -20px;
+  cursor: pointer; /* Optional: Change cursor to pointer */
+}
+.CreateBtnPost:hover {
+  background: rgb(243, 243, 243);
+}
+.language {
+  margin-top: -15px;
+}
+.settingsSquare {
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  border: 1px solid rgb(243, 243, 243);
+}
+.Public-Private {
+  margin-right: 140px; /* Space between text and button */
+}
+.CreateBtnPost33 {
+  border: 1px solid rgb(243, 243, 243);
+  height: 30px;
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  border-radius: 4px; /* Optional: Add border radius */
+  position: relative;
+  top: 4px;
+  left: -10px;
+  cursor: pointer; /* Optional: Change cursor to pointer */
+}
+.CreateBtnPost33:hover {
+  background: rgb(243, 243, 243);
+}
+.CommunitiesSettingsH1 {
+  position: relative;
+  top: -10px;
+  left: -5px;
+  font-weight: bold;
+  color: #595959;
+  width: 305px;
+}
+.CommunitiesSettingsH1:hover {
+  background: #f6f6f6;
+}
+.Exit {
+  background: #000;
+  color: white;
+  width: 100px;
+  height: 30px;
+  display: flex;            /* Enable flexbox */
+  align-items: center;      /* Vertically center the text */
+  justify-content: center;  /* Horizontally center the text */
+  border: none;             /* Remove default border */
+  border-radius: 105px;      /* Optional: Rounded corners */
+  font-size: 16px;          /* Optional: Adjust font size */
+  cursor: pointer;          /* Change cursor on hover */
+}
+
+.Exit:hover {
+  background: #333;         /* Optional: Darker background on hover */
+}
+.CreateBtnPost2 {
+  border: 1px solid rgb(243, 243, 243);
+  height: 30px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  border-radius: 4px; /* Optional: Add border radius */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+}
+.CreateBtnPost2:hover {
+  background: rgb(243, 243, 243);
+}
+.CreateBtnPost22222515 {
+  height: 40px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  position: absolute;
+  right: 105px;
+}
+.CreateBtnPost2222 {
+  height: 40px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  background: rgb(246, 246, 246);
+  position: absolute;
+  right: 105px;
+}
+.GroupBorder214 {
+  border: 1px solid  rgb(246, 246, 246);
+}
+.DiscoverCommunities {
+  position: relative;
+  top: -10px;
+  left: 20px;
+}
+.HeartIconChatBubbleOvalLeftIcon23 {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+}
+.HeartIconChatBubbleOvalLeftIcon23:hover {
+  width: 50px;
+  height: 50px;
+  background: rgb(246, 246, 246);
+}
+.TrashIconHeartIconChatBubbleOvalLeftIcon23 {
+  position: relative;
+  left: 3px;
+}
+.messagelikes {
+  position: relative;
+  top: 40;
+  margin-top: 10px;
+}
+.text-main-accent2 {
+  position: relative;
+  top: -50px;
+}
+.text-main-accent22 {
+  position: relative;
+  top: -50px;
+}
+.toggleMenu {
+  position: relative;
+  top: -5px;
+  left: 510px;
+  border-radius: 105px;
+}
+
+.HeartIconChatBubbleOvalLeftIcon23:active {
+  width: 50px;
+  height: 50px;
+  background: rgb(248, 248, 248);
+}
+.HeartIconChatBubbleOvalLeftIcon2 {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.HeartIconChatBubbleOvalLeftIcon2:hover {
+  width: 50px;
+  height: 50px;
+  background: rgb(246, 246, 246);
+}
+.HeartIconChatBubbleOvalLeftIcon2:active {
+  width: 50px;
+  height: 50px;
+  background: rgb(248, 248, 248);
+}
+.HeartIconChatBubbleOvalLeftIcon {
+  width: 50px;
+  height: 50px;
+  margin-left: 110px;
+  position: relative;
+  left: -100px;
+}
+.HeartIconChatBubbleOvalLeftIcon:hover {
+  width: 50px;
+  height: 50px;
+  background: rgb(246, 246, 246);
+}
+.HeartIconChatBubbleOvalLeftIcon:active {
+  width: 50px;
+  height: 50px;
+  background: rgb(248, 248, 248);
+}
+.CreateBtnPost22222 {
+  height: 40px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  background: rgb(246, 246, 246);
+  position: relative;
+  top: 10px;
+}
+.CreateBtnPost222 {
+  height: 40px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  position: absolute;
+  right: 15px;
+}
+.CreateBtnPost22224 {
+  height: 25px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  background: rgb(246, 246, 246);
+  position: absolute;
+  right: 5px;
+}
+.MainHeaderButtom {
+  position: relative;
+  top: 20px;
+  display: flex;
+  gap: 0px; /* This will create 20 pixels of space between the buttons */
+}
+.dfgukshygehjkgdiluysde9iopui {
+  position: relative;
+  top: 50px;
+}
+.gfdegesgdsgsegsg {
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.dgsgsgsdgsedsgsdgsege {
+  position: relative;
+  top: 0px;
+  color: black;
+}
+.CreateBtnPost22 {
+  height: 40px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 0 10px; /* Optional: Add horizontal padding */
+  background-color: none; /* Optional: Set background color */
+  color: rgb(82, 82, 82); /* Optional: Set text color */
+  font-size: 14px; /* Optional: Set font size */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+  position: absolute;
+  top: 0px;
+  right: 70px;
+}
+.inputclassNamepassword {
+  margin-bottom: 10px;
+}
+.ViewandmanageSubscriptions2 {
+  margin-bottom: 10px;
+  color: #707070;
+  margin-left: -40px;
+}
+.ViewandmanageSubscriptions22{
+  margin-bottom: 0px;
+  color: #272727;
+  margin-left: -215px;
+}
+.ViewandmanageSubscriptions22button {
+  border: 1px solid rgb(246, 246, 246);
+  padding: 20px;
+  border-radius:15px;
+  position: relative;
+  top: 5px;
+}
+.input123 {
+  border: 1px solid #d3e2f5;
+}
+.PremiumBuy2 {
+  border-radius: 15px;
+  width: 100%;
+}
+.ViewandmanageSubscriptions22button2 {
+  border: 1px solid rgb(246, 246, 246);
+  padding: 20px;
+  border-radius:15px;
+  position: relative;
+  top: 15px;
+}
+.buttonverification {
+  background: rgb(246, 246, 246);
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+.PremiumBuy {
+  border-radius: 15px;
+  width: 100%;
+  background: black;
+}
+.ViewandmanageSubscriptions {
+  margin-bottom: 10px;
+  color: #707070;
+}
+.CreateBtnPost22:hover {
+  background: rgb(243, 243, 243);
+}
+.CreateBtnPost22:active {
+  background: rgb(246, 246, 246);
+}
+.Depends {
+  color: rgb(68, 68, 68);
+  margin-left: 5px;
+  font-size: 12px;
+}
+.Public-Private3 {
+  border: 1px solid rgb(243, 243, 243);
+}
+.text-center-Profile-privet {
+  font-size: 13px;
+  margin-left: 20px;
+  position: relative;
+  top: 30px;
+}
+.text-center-Profile-privet2 {
+  font-size: 13px;
+  margin-left: 20px;
+  position: relative;
+  top: 30px;
+}
+.text-center-Profile-privet23 {
+  font-size: 13px;
+  margin-left: 20px;
+  color: #329ff2;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+}
+.account-right {
+  position: relative;
+left: -40px;
+}
+.subscribe-button {
+  background: #000000;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 44%;
+  transition: background 0.3s;
+}
+.subscribe-button:hover {
+  background: #272727;
+}
+.subscribingText {
+  font-size: 12px;
+  font-weight: var(--accent-orange);
+
+}
+.BoxsubscribingText {
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 10px;
+  width: 350px;
+  position: relative;
+  top: 10px;
+  left: 30%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+.HomeButton7 {
+  position: absolute;
+  top: -7px;
+  left: 700px;
+}
+@media only screen and (max-width: 600px) {
+  .HomeButton7 {
+    position: absolute;
+    top: 0px;
+    left: 340px;
+  }
+}
+.HomeButton6 {
+  position: absolute;
+  top: -7px;
+  left: 600px;
+}
+@media only screen and (max-width: 600px) {
+  .HomeButton6 {
+    position: absolute;
+    top: 0px;
+    left: 280px;
+  }
+}
+.HomeButton5 {
+  position: absolute;
+  top: -7px;
+  left: 500px;
+}
+@media only screen and (max-width: 600px) {
+  .HomeButton5 {
+    position: absolute;
+    top: 0px;
+    left: 220px;
+  }
+}
+.HomeButton4 {
+  position: absolute;
+  top: -7px;
+  left: 410px;
+}
+@media only screen and (max-width: 600px) {
+  .HomeButton4 {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ProfileTEctHome {
+    display: none;
+  }
+}
+.HomeButton3 {
+  position: absolute;
+  top: -7px;
+  left: 300px;
+}
+@media only screen and (max-width: 600px) {
+  .HomeButton3 {
+    position: absolute;
+    top: 0px;
+    left: 110px;
+  }
+}
+.ProfileTEctHomesvg {
+  position: relative;
+  left: 10px;
+}
+.HomeButton2 {
+  position: absolute;
+  top: -7px;
+  left: 220px;
+}
+@media only screen and (max-width: 600px) {
+  .HomeButton2 {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+  }
+}
+
+.HomeButton {
+  position: absolute;
+  top: -7px;
+  left: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .HomeButton {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+}
+
+.ProfileTEctHome {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.fixed-top-bar3 {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: none;
+  z-index: 10;
+  border: none;
+  border: 1px solid rgb(243, 243, 243);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 57px;
+}
+
+.dfsedsedsedsfse1 {
+  border: 3px solid #B9CAD3;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+.TweetbookSearch {
+  position: absolute;
+  right: 125%;
+  width: 130%;
+}
+
+.dsgseswiudhgiusge {
+  position: relative;
+  left: -10px;
+}
+.logo {
+  display: inline-block;
+  position: absolute;
+  top: -46px;
+  left: 20px;
+  font-size: 29px; /* Adjust font size for prominence */
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden; /* Ensures no overflow during animation */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Media query to hide logo on mobile devices */
+@media (max-width: 768px) {
+  .logo {
+      display: none; /* Hide the logo on screens smaller than 768px */
+  }
+}
+
+.Inputparent {
+  position: relative;
+  top: 8px;
+}
+.color-text {
+  display: inline-block;
+  color: #000; /* Default color when not hovered */
+}
+
+/* Color animation on hover */
+.logo:hover .color-text {
+  color: transparent; /* Hide text color on hover */
+}
+
+.logo:hover .color-text:nth-child(1) { color: rgb(255, 0, 0); }     /* Red */
+.logo:hover .color-text:nth-child(2) { color: rgb(255, 127, 0); } /* Orange */
+.logo:hover .color-text:nth-child(3) { color: rgb(255, 255, 0); } /* Yellow */
+.logo:hover .color-text:nth-child(4) { color: rgb(0, 255, 0); }   /* Green */
+.logo:hover .color-text:nth-child(5) { color: rgb(0, 0, 255); }   /* Blue */
+.logo:hover .color-text:nth-child(6) { color: rgb(75, 0, 130); }  /* Indigo */
+.logo:hover .color-text:nth-child(7) { color: rgb(148, 0, 211); } /* Violet */
+.logo:hover .color-text:nth-child(8) { color: rgb(255, 20, 147); } /* Deep Pink */
+.logo:hover .color-text:nth-child(9) { color: rgb(135, 206, 250); } /* Light Sky Blue */
+.logo:hover .color-text:nth-child(10) { color: rgb(255, 105, 180); } /* Hot Pink */
+
+/* Add a subtle animation effect when transitioning colors */
+@keyframes rainbow {
+  0% { color: rgb(255, 0, 0); }
+  14% { color: rgb(255, 127, 0); }
+  28% { color: rgb(255, 255, 0); }
+  42% { color: rgb(0, 255, 0); }
+  57% { color: rgb(0, 0, 255); }
+  71% { color: rgb(75, 0, 130); }
+  85% { color: rgb(148, 0, 211); }
+  100% { color: rgb(255, 20, 147); }
+}
+
+/* Use animation on hover for a dynamic effect */
+.logo:hover .color-text {
+  animation: rainbow 1s infinite; /* Infinite rainbow animation */
+}
+
+.fixed-top-bar3222 {
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: none;
+  z-index: 10;
+  border: none;
+  border: 1px solid rgb(243, 243, 243);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 57px;
+}
+.ButtonNext {
+  width: 100%;
+  height: 50px;
+  border-radius: 105px;
+  color: white;
+  font-weight: bold;
+  background: #000;
+  position: absolute;
+  bottom: -140px;
+}
