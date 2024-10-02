@@ -13,3 +13,6 @@ Lists
 Live stream
 Trends
 And many more actions found in the application such as: likes, comments, shares, views, user search, verification badge for verified users. and more..
+
+
+To build this app I used Firebase servers !
